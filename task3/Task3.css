@@ -1,0 +1,16 @@
+body {
+    background-color: #68cdd5;
+    padding:0.5vh 0.5vw;
+    margin:0.5vh 0.5vw;
+    text-align: center;
+}
+p{color:white}
+.icon1,.icon2,.icon3{max-width: 50px}
+.icon1{float:left;}
+.content{margin:10vh 15vw;}
+.logo,.character{margin:0 0 15vh 0;}
+.logo{max-width: 120px}
+.character{text-align: justify;}
+.left{float:left;}
+.right{float:right;}
+.user,.compan{font-size: 0.7rem;}
