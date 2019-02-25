@@ -1,48 +1,49 @@
-html,body {
+html,body{
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     font-size: 50px;
-    background-color: #ffffff;}
+    background-color: #fff;}
 header{
     position:fixed;
-    top:0;
+    top: 0;
     display:flex;
     align-items: center;
     justify-content:center;
     width: 100%;
     height: 1rem;
-    margin:0;
-    font-size: 0.3rem;
-    color: white;
+    margin: 0;
+    font-size: .3rem;
+    color: #fff;
     background: #5fc0cd;
 }
 main{
     margin-top:1rem;}
 footer{
     position:fixed;
-    bottom:0;
+    bottom: 0;
     display:flex;
     align-items: center;
     justify-content:center;
     width: 100%;
     height: 1rem;
-    margin:0;
-    font-size: 0.3rem;
-    color: white;
-    background-color: #ffffff;
+    margin: 0;
+    font-size: .3rem;
+    color: #fff;
+    background-color: #fff;
 }
 button{
-    width:48%;
+    width: 48%;
     height: 98%;
     border-radius:5px;
     padding: 0;
     margin: 0.9%}
 
-.h_left{
+.h_left {
     position: fixed;
-    left:0.3rem;}
+    left: .3rem;
+}
 .information_a {
     display: flex;
     align-items: center;
@@ -50,59 +51,64 @@ button{
     background:url("./images/background.png") no-repeat center;
     background-size:100% 100%;
 }
-img.head_portrait{
+img.head_portrait {
     display: inline;
     width: 2rem;
-    height:2rem;
-    margin: 0 0.3rem;
+    height: 2rem;
+    margin: 0 .3rem;
 }
 .user {
     display: inline;
-    font-size: 0.3rem;
-    color: white;
+    font-size: .3rem;
+    color: #fff;
 }
-.information_b{
-    font-size: 0.3rem
+.information_b {
+    font-size: .3rem
 }
-.skill_1,.skill_2,.skill_3,.skill_4,.skill_5,.skill_6{
+.skill_1,.skill_2,.skill_3,.skill_4,.skill_5,.skill_6 {
     display: flex;
     align-items: center;
     min-height: 1.2rem;
     height: auto!important;
     border: none;
     border-bottom: solid 1px #c6c6c8;
-    margin:0 0.3rem;
+    margin: 0 .3rem;
 }
-.skill_11{
-    padding-left: 0.1rem;
+.skill_11 {
+    padding-left: .1rem;
     border-left: solid 1px #5fc0cd;
     margin: 0;
 }
 .skill_21,.skill_22 {
-    height:0.4rem;
-    padding:0 0.2rem}
-.skill_21{
-    border-right: solid 1px black}
+    height: .4rem;
+    padding: 0 .2rem
+}
+.skill_21 {
+    border-right: solid 1px black
+}
 img.star {
-    width: 0.3rem;
-    height: 0.3rem;
+    width: .3rem;
+    height: .3rem;
 }
-.skill_31,.skill_32,.skill_41,.skill_42,.skill_51,.skill_52,.skill_61,.skill_62{
-    padding:0 0.2rem;
+.skill_31,.skill_32,.skill_41,.skill_42,.skill_51,.skill_52,.skill_61,.skill_62 {
+    padding:0 .2rem;
 }
-.skill_31,.skill_41,.skill_51,.skill_61{
+.skill_31,.skill_41,.skill_51,.skill_61 {
     min-width: 1.2rem;
     border-right: solid 1px black;
-    color: #C6C6C8}
-.skill_52{color: #E76F6E;}
-.footer_btn1{
+    color: #C6C6C8
+}
+.skill_52 {
+    color: #E76F6E;
+}
+.footer_btn1 {
     border:solid 1px #5fc0cd;
     color: #5fc0cd;
-    background-color: #ffffff;
+    background-color: #fff;
 }
-.footer_btn2{
+.footer_btn2 {
     border:solid 1px #5fc0cd;
-    color: #ffffff;
+    color: #fff;
     background-color: #5fc0cd;
 }
 
