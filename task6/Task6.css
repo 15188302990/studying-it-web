@@ -61,6 +61,11 @@ button{
     color: #999;
     background-color: #fff;
 }
+.icon_arrow {
+    position: absolute;
+    right: 0;
+    top: 0.3rem;
+}
 .s_position,.s_food,.s_condition{
     display: inline-block;
     width: 100%;
@@ -145,14 +150,19 @@ main{
 .date {
     display: inline-block;
     width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .price {
     display: inline-block;
     width: 2rem;
     color: red;
     text-align: -webkit-right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
-
 .footer{position: fixed;
     bottom: 0;
     display: flex;
