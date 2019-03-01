@@ -1,0 +1,152 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: solid 0.002rem #74d4eb ;
+}
+.h1 {
+    display: flex;
+
+    align-items: center;
+
+    height: 1rem;
+
+    font-size: 0.4rem;
+    color: #fff;
+    background-color: #29bde0;
+}
+.h1-left,.h1-right {
+    width: .9rem;
+    height: .9rem;
+}
+.h1-left{
+    margin-left: .3rem;
+}
+.h1-right {
+    margin-right: .3rem;
+}
+.h1-content {
+    width: 100vw;
+    text-align: center;
+}
+main{
+    margin-top: 1rem;
+}
+.m1 {
+    padding: 0 11vw;
+    background-color: #29bde0;
+}
+.m1-logo {
+    text-align: center;
+}
+.icon_logo {
+    width: 100%;
+}
+.m1-valuate {
+    margin: .3rem 0;
+    font-size: .4rem;
+    color: #ffc865;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+.m1-detail {
+    font-size: .3rem;
+    color: #fff;
+}
+.m1-detail-time {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.m1-detail-role {
+height: .8rem;
+
+}
+.role {
+    float: left;
+    width: 30%;
+}
+
+.m2 {
+    padding: 0 11vw;
+}
+.m2-process-1 {
+    display: flex;
+}
+.m2-process-1-date,.m2-process-1-time {
+    display: inline-block;
+}
+.m2-process-1-date {
+    width: 100%;
+    font-size: 0.4rem;
+    color: #000;
+    text-align: left;
+}
+.m2-process-1-time {
+    width: 2rem;
+    font-size: 0.3rem;
+    color: #a6a6a6;
+    text-align: right;
+}
+.m2-process-2,.m2-process-3 {
+    font-size: 0.28rem;
+    color: #a6a6a6;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position:fixed;
+    bottom: 0;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+
+    height: 1.2rem;
+
+
+
+    background:rgba(41,189,224,0.5) none repeat scroll !important;
+    ;
+}
+button{
+    width: 100%;
+    height: .72rem;
+    border-radius:5px;
+
+    margin: .24rem;
+
+
+}
+.footer_btn1 {
+    border:solid 1px #5fc0cd;
+    color: #fff;
+    background-color: #f66f6f;
+}
+.footer_btn2 {
+    border:solid 1px #5fc0cd;
+    color: #fff;
+    background-color: #fbb435;
+}

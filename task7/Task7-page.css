@@ -1,0 +1,110 @@
+html,body{
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    background-color: #f0f0f0;
+}
+header {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .3rem;
+    background-color: #29bde0;
+}
+.menu {
+    width: .7rem;
+    vertical-align:middle;
+    margin-left: .2rem;
+}
+.b-last_game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem 0 0.2rem 0.2rem;
+    height: 1.5rem;
+    border: solid 1px #d0d0d0;
+    font-size: 0.3rem;
+    color: #9a9a9a;
+    background-color: #fff;
+}
+.lg-content {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.lg-icon {
+    height: .5rem;
+    width: .4rem;
+    float: right;
+}
+.b-game_version {
+    margin-left: .2rem;
+    border: solid 1px #d0d0d0;
+    border-bottom: none;
+    font-size: .3rem;
+    color: #9a9a9a;
+    background-color: #fff;
+}
+.game-name {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    border-bottom: solid 1px #fdd793;
+    line-height: 1rem;
+    color: #fbb435;
+    text-align: center;
+}
+.gv {
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    border: none;
+}
+.gv-name {
+    display: block;
+    height: 1.6rem;
+    margin: .2rem .4rem;
+    border: none;
+    color: #fff;
+    line-height: 1.6rem;
+    text-align: center;
+    background-color: #69d1e9;
+}
+.gv-number {
+    display: block;
+    height: .4rem;
+    margin: 0 .4rem;
+    border: none;
+    color:#787878;
+    line-height: .4rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.circular {
+    display: flex;
+    justify-content: center;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+}
+span {
+    width: .2rem;
+    height: .2rem;
+    border-radius: .2rem;
+    display: block;
+    float: left;
+    margin: .1rem;
+    background-color: #f0f0f0;
+}
+.circular1:hover {
+    background-color: #69d1e9;
+}
+
+
+
