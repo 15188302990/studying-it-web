@@ -10,6 +10,7 @@ header {
     top: 0;
     width: 100%;
     border-bottom: solid 0.002rem #74d4eb ;
+    z-index: 1;
 }
 .h1 {
     display: flex;
@@ -45,6 +46,7 @@ main{
 }
 .m1-logo {
     text-align: center;
+    transform: scale(0.5)
 }
 .icon_logo {
     width: 100%;
@@ -75,12 +77,14 @@ height: .8rem;
     float: left;
     width: 30%;
 }
-
-.m2 {
+.m2-process {
     padding: 0 11vw;
+    border-bottom: solid 1px #ddd;
 }
+
 .m2-process-1 {
     display: flex;
+
 }
 .m2-process-1-date,.m2-process-1-time {
     display: inline-block;

@@ -43,20 +43,22 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 1.2rem;
     margin: 0;
-    font-size: 0.3rem;
+    font-size: .3rem;
     color: #464646;
     background-color: #b9e9f5;
 }
 .h2-content {
     width: 100vw;
-    padding-left: .8rem
+    padding-left: .8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 audio {
     opacity:0;/*透明*/
-
+    width: 1.62rem;
     height: .5rem;
     margin-right: -.8rem;
     transform: scaleX(-1);
@@ -105,13 +107,20 @@ main {
     margin-top: 2.7rem;
     background-color: #29bde0;
 }
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 33vw;
+}
 .role {
-    float: left;
+
     width: 20vw;
     height: 20vw;
     padding: 0;
     border: solid 0.9vw #fff;
-    margin: 5.5vw 5.5vw 8.3vw 5.5vw;
+
     text-align: center;
 
 }
@@ -159,7 +168,9 @@ main {
 
     display: inline-block;
     background-color: #fff;
+    transform: scale(0.5)
 }
+
 .tb-1{
     margin-left: 0;
 }
@@ -168,9 +179,9 @@ main {
 }
 
 .tb-1 {background-position: -12px -44px;}
-.tb-2 {background-position: -10px -81px;}
+.tb-2 {background-position: -8px -79px;}
 .tb-3 {background-position: -11px -122px;}
-.tb-4 {background-position: -8px -8px;}
+.tb-4 {background-position: -6px -6px;}
 
 .role:hover .do{display: block}
 footer {
