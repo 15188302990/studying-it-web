@@ -49,7 +49,7 @@ button{
     width: 1rem;
     height: 1rem;
     background-position: -10px -218px;
-    transform: scale(0.5)
+    transform: scale(.5)
 }
 
 .select{
@@ -68,7 +68,7 @@ button{
 .icon_arrow {
     position: absolute;
     right: 0;
-    top: 0.3rem;
+    top: .3rem;
 }
 .s_position,.s_food,.s_condition{
     display: inline-block;
@@ -86,12 +86,10 @@ button{
 
 .s_position,.s_food,.s_condition{
     position: relative;
-    display: inline-block;
 }
 .dropdown-content {
     position: absolute;
     display: none;
-    z-index: 1;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -116,9 +114,10 @@ li {
     display: block;
 }
 main{
-    margin: 1.8rem 0;}
+    margin: 1.8rem 0;
+}
 .content {
-    width:100%;
+    width: 100%;
     height: 1.5rem;
     border-bottom: solid 1px #999;
 }
@@ -136,14 +135,14 @@ main{
     margin-left: .9rem;
 }
 .icon_time,.icon_place,.icon_r_back {
-    width: 0.5rem;
+    width: .5rem;
     height: .5rem;
     margin-left: .2rem;
     margin-right: .2rem;
 }
 .icon_time,.icon_place {
     float: left;
-    transform: scale(0.5)
+    transform: scale(.5)
 }
 .icon_r_back {
     float:right;
@@ -176,7 +175,7 @@ main{
     color: #55a8b3;
     font-size: .3rem;
     text-align: center;
-    background: white;
+    background: #f8fafb;
 }
 .f-write{
     background-image: url("images/icon_write.jpg");
@@ -186,4 +185,19 @@ main{
 .f-home,.f-write,.f-people {
     width: 1.5rem;
     height: 1.5rem;
+}
+.f-home:hover {
+     cursor:pointer;
+ }
+.f-write:hover {
+    cursor:pointer;
+}
+.f-people:hover {
+    cursor:pointer;
+}
+button:hover {
+    cursor:pointer;
+}
+.position:hover {
+    cursor:pointer;
 }
