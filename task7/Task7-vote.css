@@ -1,7 +1,4 @@
 html,body{
-
-    /*height: 100%;多余
-    padding: 0;*/
     margin: 0;
     font-size: 50px;
     background-color: #29bde0;
@@ -12,18 +9,14 @@ header {
     width: 100%;
     height: 2.7rem;
     z-index: 1;
+    background-color: #29bde0;
 }
 .h1 {
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
-
     height: 1rem;
-    /*padding: 0;*/
-    /*margin: 0;*/
     font-size: 0.4rem;
     color: #fff;
-    /*background-color: #29bde0;*/
 }
 .h1-left,.h1-right {
     width: .5rem;
@@ -52,12 +45,9 @@ header {
 .h2-content {
     width: 100vw;
     padding-left: .8rem;
-    /*text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;*/
 }
 audio {
-    opacity:0;/*透明*/
+    opacity:0;
     width: 1.62rem;
     height: .5rem;
     margin-right: -.8rem;
@@ -74,62 +64,46 @@ audio {
 }
 .h3 {
     display: flex;
-    /*align-items: center;
-    /*height: 0.2rem;
-    background-color: #29bde0;*/
 }
 .h3-l {
     width: 1rem;
 }
 .h3-m {
-    /*width: 0;
-    height: 0;
-    overflow: hidden;
-    font-size: 0;
-    line-height: 0;*/
     border-width: .2rem;
     border-style: solid;
     border-color: #b9e9f5 transparent transparent transparent;
 }
 .h4 {
 
-    /*height: .3rem;*/
+    height: .3rem;
     padding-left: 1rem;
     line-height: .3rem;
     font-size: .2rem;
     color: #fff;
-    /*background-color: #29bde0;*/
+    background-color: #29bde0;
 
 }
 main {
-
-
     margin-top: 2.7rem;
-    /*background-color: #29bde0;*/
 }
 .main-content{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     height: 33vw;
 }
 .role {
-
     width: 20vw;
     height: 20vw;
     padding: 0;
     border: solid 0.9vw #fff;
-
     text-align: center;
 
 }
 .role-name {
-    /*width: 100%;*/
     height: 75%;
     line-height: 18.75vw;
     font-size: .5rem;
-    /*color: #0f0f0f;*/
     background-color: #f5c97b
 
 }
@@ -250,6 +224,7 @@ button {
         height: 6.25vw;
     }
 }
-
-
+.no-main-content {
+    height: 15vh;
+}
 
