@@ -1,42 +1,36 @@
 html,body{
-    width: 100%;
-    height: 100%;
-    padding: 0;
+    /*删除了height、width、padding*/
     margin: 0;
     font-size: 50px;
+}
+p {
+    margin: 0;/*删除div改写为p，改写默认边距*/
 }
 header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%;/*不能删除，删除不铺满*/
     border-bottom: solid 0.002rem #74d4eb ;
     z-index: 1;
 }
 .h1 {
     display: flex;
-
     align-items: center;
-
+    justify-content: space-between;/*添加、使空间等分而实现左中右布局*/
     height: 1rem;
-
+    padding: 0 .3rem;/*添加、使图片离边框有位置，并删除img的margin书写，减少代码*/
     font-size: 0.4rem;
     color: #fff;
     background-color: #29bde0;
 }
 .h1-left,.h1-right {
-    width: .9rem;
-    height: .9rem;
+    width: .5rem;/*改写图片大小*/
+    height: .5rem;
 }
-.h1-left{
-    margin-left: .3rem;
-}
-.h1-right {
-    margin-right: .3rem;
-}
-.h1-content {
-    width: 100vw;
-    text-align: center;
-}
+/*删除 .h1-left{margin-left: .3rem;}  .h1-right {margin-right: .3rem;}*/
+/*删除 .h1-content {
+    width: 100vw;于justify-content: space-between冲突
+    text-align: center;多余}*/
 main{
     margin-top: 1rem;
 }
@@ -46,29 +40,24 @@ main{
 }
 .m1-logo {
     text-align: center;
-    transform: scale(0.5)
+    /*transform: scale(0.5)多余*/
 }
-.icon_logo {
-    width: 100%;
-}
+/*.icon_logo {
+    width: 100%;多余}*/
 .m1-valuate {
     margin: .3rem 0;
     font-size: .4rem;
     color: #ffc865;
     text-align: justify;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    /*删除text-overflow: ellipsis; overflow: hidden;在320正常，多余*/
 
 }
 .m1-detail {
     font-size: .3rem;
     color: #fff;
 }
-.m1-detail-time {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
+/*.m1-detail-time {
+    text-overflow: ellipsis;white-space: nowrap;overflow: hidden;320下能正常显示，多余删除}*/
 .m1-detail-role {
 height: .8rem;
 
@@ -84,73 +73,64 @@ height: .8rem;
 
 .m2-process-1 {
     display: flex;
-
+    justify-content: space-between;/*左右布局*/
 }
 .m2-process-1-date,.m2-process-1-time {
     display: inline-block;
 }
 .m2-process-1-date {
-    width: 100%;
+    /*删除width: 100%;用flex，多余*/
     font-size: 0.4rem;
-    color: #000;
-    text-align: left;
+    /*删除color: #000;默认黑色，多余*/
+    /*删除text-align: left;用flex，jc-sb，多余*/
 }
 .m2-process-1-time {
-    width: 2rem;
+    /*删除width: 2rem;用flex，多余*/
     font-size: 0.3rem;
     color: #a6a6a6;
-    text-align: right;
+    /*删除text-align: right;用flex，jc-sb，多余*/
 }
 .m2-process-2,.m2-process-3 {
     font-size: 0.28rem;
     color: #a6a6a6;
-    text-overflow: ellipsis;
+    /*text-overflow: ellipsis;320下能正常显示，多余删除
     white-space: nowrap;
-    overflow: hidden
+    overflow: hidden}*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.m3 {
+    height: 20vh;
+}
 footer{
     position:fixed;
     bottom: 0;
     display:flex;
     align-items: center;
-    justify-content:center;
+    /*justify-content:center;多余，不知道原因*/
     width: 100%;
-
     height: 1.2rem;
-
-
-
     background:rgba(41,189,224,0.5) none repeat scroll !important;
-    ;
+
 }
-button{
+/*删除button{width: 100%;height: .72rem;border-radius:5px;margin: .24rem;}用a*/
+footer a {
     width: 100%;
-    height: .72rem;
-    border-radius:5px;
-
+    /*height: .72rem;多余，不知道原因*/
+    line-height: .72rem;
+    border-radius: 5px;
     margin: .24rem;
-
-
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 }
 .footer_btn1 {
-    border:solid 1px #5fc0cd;
-    color: #fff;
+    /*border:solid 1px #5fc0cd;多余*/
+    /*color: #fff;与a重复*/
     background-color: #f66f6f;
 }
 .footer_btn2 {
-    border:solid 1px #5fc0cd;
-    color: #fff;
+    /*删除border:solid 1px #5fc0cd;多余*/
+    /*删除color: #fff;与a重复*/
     background-color: #fbb435;
 }
