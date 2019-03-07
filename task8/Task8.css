@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    background-color: #fafafa;
+}
+
+/*以下是h1*/
+.h-1 {
+    height: 35px;
+    line-height: 35px;
+}
+#h-1-box {
+    display: flex;
+    justify-content: space-between;
+    color: #29b078;
+}
+.h1-icon {
+    width: 25px;
+    height: 25px;
+}
+.h1-login {
+    display: none;
+}
+@media (max-width: 768px) {
+    .h1-icon {
+        display: none;
+        /*如果设置h1-icon-box为display：none，则这个元素将彻底消失，不能帮助h1-login在右。
+        不能使h-1的justify-content: space-between发挥效应*/
+    }
+    .h1-login {
+        display: block;
+    }
+    .h1-text {
+        display: none;
+    }
+}
+/*以上是h1*/
+
+.h-2 {
+    background-color: #29b078;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    height: 55px;}/*logo居中*/
+.navbar-toggle {
+    height: 39px;/*按钮居中*/
+}
+
+/*以下是h2-menu-prepare*/
+.navbar {/*它有默认样式，所以清除*/
+    border:0;
+    margin: 0;
+}
+.navbar-default {
+    background-color: #29b078;
+}
+/*以上是h2-menu-prepare*/
+
+
+/*以下使其出于左右位置*/
+.h2-1-logo {
+    width: 100px;
+    float: left}
+@media(min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
+}
+/*以上使其出于左右位置*/
+
+/*以下使选项文字居中,白色*/
+.navbar-default .navbar-nav>li>a {
+    color: #fff;/*使菜单的选项文字的字体为白*/
+    text-align: center;/*使菜单的选项文字的字体居中*/
+}
+/*以下出现下划线*/
+.navbar-default .navbar-nav > li > a {
+    border-bottom: solid 5px #29b078;/*为了不撑破*/
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    border-bottom: solid 5px #fff;/*出现下划线*/
+}
+/*以上出现下划线*/
+@media (min-width: 768px) {
+    .container-fluid > .navbar-collapse {
+        margin-right: -30px;
+    }
+}
+/*以上是对header的修饰*/
+
+
+/*以上是对header的修饰*/
+/*以下是对m1的修饰*/
+.m1 {
+    padding: 0 7.5vw;
+}
+.m1-content {
+    height: 260px;
+    padding: 50px 0;
+    text-align: center;
+}
+.m1-icon {
+    height: 60px;
+}
+.m1-h {
+     margin: 10px 0;
+}
+.m1-p {
+    padding: 0 10%;
+
+}
+.m1-now-box {
+    margin: 25px 0;
+}
+
+/*以上是对m1的修饰*/
+/*以下是对m2的修饰*/
+
+.m2-h {
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.m2-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m2-content-1 {
+    float: left;
+    min-width: 50px;
+    min-height: 50px;
+    border: solid 1px #ececec;
+    border-radius: 50%;
+    line-height: 50px;
+    color: #29b078;
+    text-align: center;
+    background-color: #fff;
+}
+
+/*以上是对m2的修饰*/
+/*以下是对m3的修饰*/
+
+.m3-h {
+    margin: 5vw 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.m3-content {
+    padding: 50px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #afafaf;
+    text-align: justify;
+
+}
+.m3-content-img,.m3-content-name {
+    text-align: center;
+}
+.m3-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circular {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin: 2vw;
+    line-height: 40px;
+    text-align: center;
+}
+.circular1 {display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+.circular1:hover {
+    background-color: #29b078;}
+/*以上是对m3的修饰*/
+/*以下是对m4的修饰*/
+
+.m4-h {
+    margin: 5vw 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.m4-content {
+    display: flex;
+
+    height: 200px;
+    margin: 20px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+@media (min-width: 1200px) {
+    .col-logo {
+        width: 20%;
+    }
+}
+/*以上是对m4的修饰*/
+/*以下是对m5的修饰*/
+.m5 {
+
+    background-color: #fff;
+}
+.m5-h {
+    padding: 5vw 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.m5-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m5-content-link {
+    color: #afafaf;
+}
+@media (min-width: 1200px) {
+    .col-link {
+        width: 10%;
+    }
+}
+/*以上是对m5的修饰*/
+/*以下是对footer的修饰*/
+footer {
+    background-color: #29b078;
+}
+.f1 {
+    color: #fff;
+    padding-top: 10px;
+}
+.f1-content-2 {
+    min-height: 20px;
+}
+.f1-content-1, .f1-content-2,.f1-content-2{
+    margin-bottom: 10px;
+}
+.f1-content-3  a {
+    color: white;
+}
+/*以上是对f1的修饰*/
+/*以下是对f2的修饰*/
+.f2{
+    border-top: solid 1px #32c086;
+    color: #fff;
+    text-align: center;
+}
+
+/*以上是对f2的修饰*/
+/*以下是出现下划线的修饰*/
+.m5-content:hover{text-decoration:underline;}
+
+.a:hover {text-decoration:underline;}
