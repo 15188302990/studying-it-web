@@ -83,7 +83,7 @@ body{
 }
 /*以上出现下划线*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-nav {
         margin: 0px -15px!important;}
 }

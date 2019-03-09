@@ -94,7 +94,7 @@ background-color: #29b078;
         margin-right: -30px;
     }
 }678-780泵格局*/
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .container-fluid {
         padding-right: 0px;
     }
