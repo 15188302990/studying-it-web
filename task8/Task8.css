@@ -76,36 +76,65 @@ body{
 }
 /*以下出现下划线*/
 .navbar-default .navbar-nav > li > a {
-    border-bottom: solid 5px #29b078;/*为了不撑破*/
+    padding-bottom: 17px;
+    border-bottom: solid 3px #29b078;/*为了不撑破*/
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    border-bottom: solid 5px #fff;/*出现下划线*/
+    border-bottom: solid 3px #fff;/*出现下划线*/
 }
 /*以上出现下划线*/
-@media (min-width: 768px) {
+
+.navbar-nav {
+    margin: 0px -15px;
+}
+/*消除下拉菜单有空余*/
+
+
+/*@media (min-width: 768px) {
     .container-fluid > .navbar-collapse {
         margin-right: -30px;
     }
+}当它768到780格局会崩 */
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-right: 0px;
+    }
+    .navbar-collapse {
+        padding-right: 0px;
+    }
 }
+
 /*以上是对header的修饰*/
 
 
 /*以上是对header的修饰*/
 /*以下是对m1的修饰*/
 .m1 {
-    padding: 0 7.5vw;
+
 }
 .m1-content {
     height: 260px;
     padding: 50px 0;
     text-align: center;
 }
+.m1-content-4 {
+    border-left: 1px dashed #afafaf;
+    height: 140px;
+    padding:0;
+    margin: 50px 0;
+}
+@media (max-width: 992px){
+    .m1-content-4{
+        border: none;
+    }
+}
+
 .m1-icon {
     height: 60px;
 }
-.m1-h {
+/*.m1-h {
      margin: 10px 0;
-}
+}*/
 .m1-p {
     padding: 0 10%;
 
@@ -118,12 +147,13 @@ body{
 /*以下是对m2的修饰*/
 
 .m2-h {
-
+    margin: 5vw 0;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 .m2-content {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,10 +182,11 @@ body{
 .m3-content {
     padding: 50px 20px;
     margin-top: 10px;
+    border: solid 5px #fff;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #afafaf;
     text-align: justify;
-
+    background-color: #fff;
 }
 .m3-content-img,.m3-content-name {
     text-align: center;
@@ -176,14 +207,18 @@ body{
 }
 .circular1 {display: block;
     float: left;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: 10px;
     border-radius: 50%;
     background-color: #f0f0f0;
 }
 .circular1:hover {
     background-color: #29b078;}
+.m3-content:hover {
+    border: solid 5px #afafaf;
+    box-shadow: none;
+}
 /*以上是对m3的修饰*/
 /*以下是对m4的修饰*/
 
@@ -211,9 +246,13 @@ body{
 }
 /*以上是对m4的修饰*/
 /*以下是对m5的修饰*/
+
 .m5 {
 
     background-color: #fff;
+}
+.m5 .row {
+    margin-bottom: 15px;
 }
 .m5-h {
     padding: 5vw 0;
@@ -221,18 +260,37 @@ body{
     font-weight: bold;
     text-align: center;
 }
+
 .m5-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 75px;
+    border-bottom: 1px solid #fff;
 }
-.m5-content-link {
+
+.m5 .col-link {
+    padding: 0;
+}
+.m5 .col-link a {
     color: #afafaf;
+    text-decoration-color: white;
+}
+.m5-content-1 {
+    display: inline-block;
+    border: 4px solid #afafaf;
+    border-radius: 50%;
+    margin: 2px 2px;
 }
 @media (min-width: 1200px) {
     .col-link {
         width: 10%;
     }
+}
+.m5-content:hover {
+    border-bottom: 1px solid #29b078;
+}
+.m5 a:hover {
+    text-decoration-color: white;
 }
 /*以上是对m5的修饰*/
 /*以下是对footer的修饰*/
@@ -249,7 +307,7 @@ footer {
 .f1-content-1, .f1-content-2,.f1-content-2{
     margin-bottom: 10px;
 }
-.f1-content-3  a {
+.f1 a {
     color: white;
 }
 /*以上是对f1的修饰*/
@@ -265,3 +323,4 @@ footer {
 .m5-content:hover{text-decoration:underline;}
 
 .a:hover {text-decoration:underline;}
+

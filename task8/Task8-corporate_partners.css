@@ -82,11 +82,21 @@ body{
     border-bottom: solid 5px #fff;/*出现下划线*/
 }
 /*以上出现下划线*/
-@media (min-width: 768px) {
+/*删除@media (min-width: 768px) {
     .container-fluid > .navbar-collapse {
         margin-right: -30px;
     }
+}768到780会崩*/
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-right: 0px;
+    }
+    .navbar-collapse {
+        padding-right: 0px;
+    }
 }
+
+
 /*以上是对h2的修饰*/
 /*以下是对h3的修饰*/
 .h3 {
@@ -143,7 +153,8 @@ ul{
 .name li{
     padding: 10px 0;
     list-style: none;
-    text-align: center;
+    width: 100px;
+    margin: auto;
 }
 .link-partner {
     color:#29b078;
@@ -158,6 +169,10 @@ ul{
 }
 li:hover .correct{
     background-color: #ff640c;
+}
+li:hover a{
+    color: #ff640c;
+    text-decoration: none;
 }
 
 
@@ -211,7 +226,7 @@ footer {
 .f1-content-1, .f1-content-2,.f1-content-2{
     margin-bottom: 10px;
 }
-.f1-content-3  a {
+.f1 a {
     color: white;
 }
 /*以上是对f1的修饰*/

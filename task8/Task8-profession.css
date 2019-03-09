@@ -82,9 +82,17 @@ background-color: #29b078;
     border-bottom: solid 5px #fff;/*出现下划线*/
 }
 /*以上出现下划线*/
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .container-fluid > .navbar-collapse {
         margin-right: -30px;
+    }
+}678-780泵格局*/
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-right: 0px;
+    }
+    .navbar-collapse {
+        padding-right: 0px;
     }
 }
 /*以上是对header的修饰*/
@@ -130,6 +138,9 @@ background-color: #29b078;
     margin-left: 15px;
     border-bottom: thin solid #d0d6d9;
 }
+.pf-header-1 a {
+    color: #000;
+}
 
 .wrapper{
     display: grid;
@@ -147,17 +158,35 @@ background-color: #29b078;
     margin-bottom: 20px;
 }
 
-.box-one{
+/*.box-one{
     grid-column-start: 1;
     grid-column-end: 5;
     background-image: url(images-profession/pf-1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+}*/
+
+.box-one{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+.box-one img {
+    width: 80%;
+    min-width: 110px;
+}
+
+
+
+
 
 .box-two{
     grid-column-start: 11;
-    grid-column-end: 6;
+    grid-column-end: 5;
+    padding: 20px 0;
     color: black;
 }
 .box-two-1{
@@ -326,7 +355,7 @@ footer {
 .f1-content-1, .f1-content-2,.f1-content-2{
     margin-bottom: 10px;
 }
-.f1-content-3  a {
+.f1 a {
     color: white;
 }
 /*以上是对f1的修饰*/
