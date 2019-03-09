@@ -253,10 +253,12 @@ body{
     width: 80%;
 }
 
-
+.m4-box {
+    padding: 2px;
+    background-color: #fff;
+}
 .m4-content:hover {
-    border-left: 2px solid #afafaf;
-    border-right: 2px solid #afafaf;
+    box-shadow: black 0px 0px 10px;
 }
 @media (min-width: 1200px) {
     .col-logo {
