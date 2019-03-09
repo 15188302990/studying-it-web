@@ -250,7 +250,8 @@ body{
 
 }
 .m4-logo-2 {
-    width: 80%;
+
+    max-height: 197px;
 }
 
 .m4-box {
@@ -320,7 +321,7 @@ footer {
 }
 .f1 {
     color: #fff;
-    padding-top: 10px;
+    padding: 10px 0 20px 0;
 }
 .f1-content-2 {
     min-height: 20px;
