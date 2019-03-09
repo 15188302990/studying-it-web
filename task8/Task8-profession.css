@@ -82,6 +82,13 @@ background-color: #29b078;
     border-bottom: solid 5px #fff;/*出现下划线*/
 }
 /*以上出现下划线*/
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin: 0px -15px!important;}
+}
+/*以上消除下拉菜单有空余*/
+
 /*@media (min-width: 768px) {
     .container-fluid > .navbar-collapse {
         margin-right: -30px;

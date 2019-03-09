@@ -84,10 +84,11 @@ body{
 }
 /*以上出现下划线*/
 
-.navbar-nav {
-    margin: 0px -15px;
+@media (max-width: 768px) {
+    .navbar-nav {
+    margin: 0px -15px!important;}
 }
-/*消除下拉菜单有空余*/
+/*以上消除下拉菜单有空余*/
 
 
 /*@media (min-width: 768px) {
