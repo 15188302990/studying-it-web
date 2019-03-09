@@ -222,7 +222,9 @@ body{
 }
 /*以上是对m3的修饰*/
 /*以下是对m4的修饰*/
-
+.m4 .row {
+    margin-bottom:15px;
+}
 .m4-h {
     margin: 5vw 0;
     font-size: 20px;
@@ -233,12 +235,28 @@ body{
     display: flex;
 
     height: 200px;
-    margin: 20px 0;
+    margin:  0;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
     text-align: center;
     justify-content: center;
     align-items: center;
 
     background-color: white;
+}
+.col-logo {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.m4-logo-2 {
+    width: 80%;
+}
+
+
+.m4-content:hover {
+    border-left: 2px solid #afafaf;
+    border-right: 2px solid #afafaf;
 }
 @media (min-width: 1200px) {
     .col-logo {
