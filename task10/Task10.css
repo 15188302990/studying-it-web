@@ -1,0 +1,306 @@
+.row {
+    align-items: center;
+}
+/*以下h1*/
+.h-1{
+    background-color: #1d7ad9;/*背景颜色*/
+    height: auto;
+}
+.h-1 .row{
+    align-items: center;
+    font-size: 10px!important;
+    color: #fff;/*字体颜色*/
+}
+.h1-button-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.h1-button-1 {
+    padding: 5px 10px;
+    border-left: 1px solid #fff;
+}
+.h1-button-2 {
+    padding: 5px 10px;
+    border-right: 1px solid #fff
+}
+.h1-button-1:hover{
+    padding: 5px 30px;
+    color: #000;
+    background-color: #fff;
+}
+.h1-button-2:hover{
+    padding: 5px 30px;
+    color: #000;
+    background-color: #fff;
+}
+/*以上h1*/
+.h-2 {
+    background-color: #f9f9f9;
+}
+.h-2 .row {/*使导航栏在右侧*/
+    justify-content: flex-end;
+}
+li {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-left: 40px;/*在宽屏时，使按钮选项有间隔，同时和h1边界一致*/
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {/*改变字体颜色*/
+    color: rgba(0,0,0,1)
+}
+@media  (max-width:992px) {/*在窄屏时*/
+    .h-2 .navbar{
+        width: 100%;/*在窄屏时，使导航栏铺满，且文字居中*/
+        text-align: center;
+    }
+    .h-2 li {
+        margin-left: 0;/*在窄屏时，使左侧和h1边界一致*/
+        margin: 10px 0;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:hover  {/*改变字体颜色 背景*/
+    color: #fff;
+    background-color: #1d7ad9;
+    border-radius: 10px;
+}
+/*还有一问题没解决，窄屏时，按钮大小和h1登录注册大小不一致*/
+/*以上h2*/
+/*以下m1*/
+.m1 .row{
+    padding-right: 15px;/*使边界一致*/
+    justify-content: flex-end;/*使整体在右边*/
+}
+/*以下是对“-0-”书写*/
+.m-1-shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.m1-shape {background-color: #ccc;/*为了减少代码，合并（选择器只能从父到子，从高到底）*/
+}
+.m-1-shape .left,.right { /*是对“- -”书写*/
+    width: 50px;
+    height:5px;
+    margin: 10px 0;
+}
+.m-1-shape .mid{ /*是对“0”书写*/
+    width: 24px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.m-1-text { /*是对文字*/
+    text-align: center;
+    color: #ccc;
+    font-weight: 500;
+}
+/*以上是对“-0-”书写*/
+/*以下是hover效果*/
+.m-1-box:hover .m1-shape{
+    background-color: #ff7f02;
+}
+.m-1-box:hover .m-1-text{
+    color: #ff7f02;
+}
+/*以上是hover效果*/
+.m2 p {
+    margin: 0;
+    border-left: 2px solid #1d7ad9;
+}
+
+
+/*以下m3*/
+/*一下公共样式*/
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;/*设置没有点击时 出来的效果*/
+    text-indent: .15em;
+    line-height: 1;
+}
+input[type="radio"]:checked + label::before {
+    /*background-color: #01cd78;
+    background-clip: content-box;
+    padding: .2em;*/
+    border: 6.5px solid #1d7ad9;/*设置点击时 出来的效果*/
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+/*以上是点击效果*/
+
+/*以下是下拉菜单*/
+.m-select-box {
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-select {
+    width: 100px;
+    height: 34px;
+
+    background-image: url("images/select-icon.png");
+    background-repeat: no-repeat;
+    background-position: 72px 2px;
+}
+/*以下是去掉下拉菜单的小箭头*/
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #ccc;
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+/*以上是去掉下拉菜单的小箭头*/
+
+/*以上是下拉菜单*/
+
+/*以上公共样式*/
+
+/*以下m3修饰部分*/
+.m3-title-box,.m4-title-box,.m5-title-box {
+    background-color: #f3f3f3;
+    color: #1d7ad9;
+    border: 1px solid #e8e8e8;
+}
+.m3-choose,.m4-choose,.m5-choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.m3-choose-box,.m4-choose-box1,.m4-choose-box2,.m5-choose-box {
+    margin: 0;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfcff;
+}
+.m4-choose-box1 {
+    border-bottom: none;
+}
+.m4-choose-box2 {
+    border-top: none;
+}
+
+/*以上m3*/
+
+/*以下m4*/
+
+
+/*以下m4的填写区域css*/
+.m4-text-box {
+display: flex;
+padding-top: 10px;
+padding-bottom: 10px;
+align-items: center;
+justify-content: center;
+}
+
+.m4-box-m {
+    height: 25px;
+    width: 50px;
+}
+.m4-box-l {
+    margin-right: 10px;
+}
+.m4-box-r {
+    margin-left: 8px;
+}
+.m4 .m-select-box {
+    position: relative;
+    top: -26px;
+}
+@media screen and (max-width: 992px) {
+    .m4 .m-select-box {
+        position: static;
+        top: 0;
+    }
+
+}
+/*以下m5*/
+.m5-choose-box {
+    min-height: 100px;
+}
+
+
+
+
+.bottom {
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e8e8e8;
+}
+
+.bottom-box {
+    min-width: 220px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background: #e15053;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+.m6 {
+    margin-bottom: 50px;
+}
+
+
+footer {
+    background-color: #f9f9f9;
+}
+.f1{
+    padding: 50px 0;
+    color: #999;
+}
+.f1-mid span {
+    margin-right: 20px;
+}
+.f1-m-1 {
+    margin: 5px 0;
+}
+.f1-right {
+    display: flex;
+    justify-content: flex-end
+}
+@media screen and (max-width: 992px) {
+    .f1-right {
+        justify-content: start;
+    }
+}
+.f1-mid span:hover {
+    color: #1d7ad9;
+}
+.f1-right img {
+    display: inline;
+    width: 92px;
+    height: 92px;
+
+}
+.f1-r p {
+    margin-bottom: 7px;
+}
+
+.f2 {
+    padding: 5px 0;
+    color: #fff;
+    text-align: center;
+    background-color: #1d7ad9;
+}
+.f2 p {
+    margin: 0;
+}

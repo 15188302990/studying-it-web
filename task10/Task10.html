@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Task10.css">
+    <title>51包装</title>
+</head>
+
+<body>
+<header>
+    <!--以下顶部-->
+    <div class="h-1">
+        <div class="container">
+            <div class="row">
+                <span class="h1-text col">客服热线：010-594-78634</span>
+                <div class="h1-button-box col">
+                    <span class="h1-button-1">登录</span>
+                    <span class="h1-button-2">注册</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--以上顶部-->
+    <!--以下导航栏-->
+    <div class="h-2">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!--以下图片-->
+                    <a class="navbar-brand" href="#"></a>
+                    <!--以下按钮-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--以下表单内容-->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">在线定制</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">标准箱</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">品质保证</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--以上导航栏-->
+</header>
+<main>
+    <!--以下“-0-导航栏”-->
+    <div class="m1">
+        <div class="container">
+            <div class="row">
+                <!--以下“-0-图形”-->
+                <div class="m-1-box">
+                    <div class="m-1-shape">
+                        <div class="m1-shape left"></div>
+                        <div class="m1-shape mid">1</div>
+                        <div class="m1-shape right"></div>
+                    </div>
+                    <p class="m-1-text">1.定制纸箱</p>
+                </div>
+                <!--以上“-0-图形”-->
+                <div class="m-1-box">
+                    <div class="m-1-shape">
+                        <div class="m1-shape left"></div>
+                        <div class="m1-shape mid">2</div>
+                        <div class="m1-shape right"></div>
+                    </div>
+                    <p class="m-1-text">2.选择数量</p>
+                </div>
+                <div class="m-1-box">
+                    <div class="m-1-shape">
+                        <div class="m1-shape left"></div>
+                        <div class="m1-shape mid">3</div>
+                        <div class="m1-shape right"></div>
+                    </div>
+                    <p class="m-1-text">3.上传附件</p>
+                </div>
+                <div class="m-1-box">
+                    <div class="m-1-shape">
+                        <div class="m1-shape left"></div>
+                        <div class="m1-shape mid">4</div>
+                        <div class="m1-shape right"></div>
+                    </div>
+                    <p class="m-1-text">4.确认下单</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--以上“-0-导航栏”-->
+    <!--以下“-0-导航栏”-->
+    <div class="m2">
+        <div class="container">
+            <div class="row">
+                <div class="m-2-header col"><p>&nbsp;请您以按照以下步骤来定制您的纸箱</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m3">
+        <div class="container">
+            <div class="row">
+                <div class="m3-title col">
+                    <div class="m3-title-box">
+                    <img src="images/m3-icon.png" alt="">
+                    选择箱型
+                    </div>
+                </div>
+            </div>
+            <div class="m3-choose-box row">
+
+                <!--name="box1"  value="1" 意思在box1组中，只能点击一个-->
+                <!--id="m3-1" for="m3-1" 意思是密码配对 -->
+                <!--onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0" 再次点击消失 -->
+                <div class="m3-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m3-1" name="box1"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m3-1">对口箱</label>
+                </div>
+                <div class="m3-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m3-2" name="box1"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m3-2">飞机盒</label>
+                </div>
+                <div class="m3-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m3-3" name="box1"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m3-3">天地盖</label>
+                </div>
+
+                <div class="col-lg-2 col-md-12 offset-lg-4"> <!--offset使用的是margin-left属性实现右移-->
+                    <div class="m-select-box">
+                        <select class="m-select">
+                            <option>查看详情</option>
+                            <option>大盒子</option>
+                            <option>中盒子</option>
+                            <option>小盒子</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="m4">
+        <div class="container">
+
+            <div class="row">
+                <div class="m4-title col">
+                    <div class="m4-title-box">
+                        <img src="images/m4-icon.png" alt="">
+                        选择箱型
+                    </div>
+                </div>
+            </div>
+
+            <div class="m4-choose-box1 row">
+                <div class="m4-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m4-1" name="box2"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m4-1">外经&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+
+                <div class="m4-text  col-md-12 col-lg-2" >
+                    <div class="m4-text-box">
+                        <span class="m4-box-l">长</span>
+                        <input class="m4-box-m" maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span class="m4-box-r">mm</span>
+                    </div>
+                </div>
+
+                <div class="m4-text  col-md-12 col-lg-2" >
+                    <div class="m4-text-box">
+                        <span class="m4-box-l">宽</span>
+                        <input class="m4-box-m" maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span class="m4-box-r">mm</span>
+                    </div>
+                </div>
+
+                <div class="m4-text  col-md-12 col-lg-2" >
+                    <div class="m4-text-box">
+                        <span class="m4-box-l">高</span>
+                        <input class="m4-box-m" maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span class="m4-box-r">mm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m4-choose-box2 row">
+                <div class="m4-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m4-2" name="box2"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m4-2">内径&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+
+                <div class="m4-text  col-md-12 col-lg-2" >
+                    <div class="m4-text-box">
+                        <span class="m4-box-l">长</span>
+                        <input class="m4-box-m" maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span class="m4-box-r">mm</span>
+                    </div>
+                </div>
+
+                <div class="m4-text  col-md-12 col-lg-2" >
+                    <div class="m4-text-box">
+                        <span class="m4-box-l">宽</span>
+                        <input class="m4-box-m" maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span class="m4-box-r">mm</span>
+                    </div>
+                </div>
+
+                <div class="m4-text  col-md-12 col-lg-2" >
+                    <div class="m4-text-box">
+                        <span class="m4-box-l">高</span>
+                        <input class="m4-box-m" maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span class="m4-box-r">mm</span>
+                    </div>
+                </div>
+
+                <div class="m4-select col-lg-2  offset-lg-2">
+                    <div class="m-select-box">
+                        <select class="m-select">
+                            <option>查看详情</option>
+                            <option>圆形</option>
+                            <option>三角形</option>
+                            <option>五角形</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="m5">
+        <div class="container">
+            <div class="row">
+                <div class="m5-title col">
+                    <div class="m5-title-box">
+                        <img src="images/m5-icon.png" alt="">
+                        选择材质
+                    </div>
+                </div>
+            </div>
+            <div class="m5-choose-box row">
+
+                <div class="m5-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m5-1" name="box3"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m5-1">三层A瓦优质</label>
+                </div>
+                <div class="m5-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m5-2" name="box3"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m5-2">三层B瓦优质</label>
+                </div>
+                <div class="m5-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m5-3" name="box3"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m5-3">三层C瓦优质</label>
+                </div>
+                <div class="m5-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m5-4" name="box3"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m5-4">三层D瓦优质</label>
+                </div>
+                <div class="m5-choose col-lg-2 col-md-12">
+                    <input type="radio" id="m5-5" name="box3"  value="1" onclick= "if(this.c==1){this.c=0;this.checked=0}else{this.c=1}"   c="0"/>
+                    <label for="m5-5">三层E瓦优质</label>
+                </div>
+
+                <div class="m5-select col-lg-2 col-md-12 ">
+                    <div class="m-select-box">
+                        <select class="m-select">
+                            <option>查看详情</option>
+                            <option>一层瓦</option>
+                            <option>二层瓦</option>
+                            <option>三层瓦</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m6">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-12">
+                    <div class="bottom">
+                        <div class="bottom-box">
+                            <span>下一步</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<footer>
+    <div class="f1">
+        <div class="container">
+            <div class="row">
+                <div class="f1-left col-lg-4 col-md-12 ">
+                    <p class="f1-l">51包装网-纸箱包装首选服务平台</p>
+                </div>
+                <div class="f1-mid col-lg-4 col-md-12 ">
+                    <div class="f1-m-1">
+                        <span class="f1-m-1-1">关于我们</span>
+                        <span class="f1-m-1-2">配送流程</span>
+                        <span class="f1-m-1-3">联系我们</span>
+                    </div>
+                    <div class="f1-m-2">
+                        <span class="f1-m-2-1">下单指南</span>
+                        <span class="f1-m-2-2">媒体介绍</span>
+                    </div>
+                </div>
+                <div class="f1-right col-lg-4 col-md-12 ">
+                    <div class="f1-r">
+                        <p class="f1-r-1">TEL：400-0000-000</p>
+                        <p class="f1-r-2 ">企业QQ：123456789</p>
+                        <p class="f1-1-3 ">微信号：xxxxxxx</p>
+
+                    </div>
+                    <img src="images/f1-icon.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="f2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="f2-text">北京五一包装科技有限公司Coptright&nbsp;@2015&nbsp;&nbsp;&nbsp;&nbsp;
+                        51baozhuang.com&nbsp;&nbsp;All&nbsp;right&nbsp;right&nbsp;reserved.
+                        京icp备99999999-1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</html>
