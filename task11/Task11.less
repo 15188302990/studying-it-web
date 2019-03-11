@@ -1,0 +1,122 @@
+@bg-color-1: #eff0f4;
+@bg-color-2:#1ba2ea;
+@bg-color-3:#fff;
+@text-color-1:#fff;
+@text-color-2:#bababa;
+@text-color-3:#1ba2ea;
+
+body {
+  margin: 0;
+
+  background-color: @bg-color-1;
+    header {
+      display:flex;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+      margin-bottom: .5rem;
+      font-size: 0.3rem;
+      color: @text-color-1;
+      background: @bg-color-2;
+      img {
+        width: 1.4rem;
+        margin-right: 0.4rem;
+      }
+    }
+    main {
+      width: 100%;
+      .account,.password {
+        display:flex;
+        align-items: center;
+        height:2rem;
+        margin-bottom: 0.3rem;
+        background: @bg-color-3;
+        img {
+          height:1.4rem;
+          margin: 0.14rem;
+          border-right: solid 1px #bababa;
+        }
+        .m-icon-1 {
+            padding: 0.1rem 0.65rem;
+        }
+        .m-icon-2{
+            padding: 0.1rem 0.41rem;
+        }
+
+        input {
+          width:100%;
+          border: none;
+          outline:none;
+          padding: 0;
+        }
+        input::-webkit-input-placeholder{
+          color: @text-color-2;
+          font-size:0.3rem;
+        }
+      }
+      .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        margin: .5rem .3rem 0 .3rem;
+        border-radius: 5px;
+        font-size: 0.3rem;
+        color: @text-color-1;
+        background: @bg-color-2;
+      }
+    }
+    footer {
+      width: 100%;
+      font-size: 0.3rem;
+      .f-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: @text-color-2;
+        p {margin: .1rem 0.3rem;
+        }
+      }
+      .f-logo {
+        margin-top: 10rem;
+        .title-box{
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 1rem;
+          color: #adaeaf;
+          .box-one{
+            width: 20%;
+            height: 15px;
+            border-bottom: 2px solid #dcdddf;
+            margin-left: 15px;
+            margin-right: 15px;
+          }
+          span{
+            line-height: 30px;
+          }
+        }
+        .logo-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .logo-1 {
+            margin: 0 2rem;
+            text-align: center;
+            img {
+              width: 1.6rem;
+            }
+            span{
+              display: block;
+            }
+          }
+
+        }
+
+      }
+    }
+}
+
+
+
+
