@@ -90,6 +90,7 @@ li {
     width: 24px;
     border-radius: 50%;
     text-align: center;
+    color: #fff;
 }
 
 .m-1-text { /*是对文字*/
@@ -110,7 +111,7 @@ li {
     margin: 0;
     border-left: 2px solid #1d7ad9;
 }
-
+/*可以把外面的div盒子，去掉，直接在p上用class命名，然后再用margin*/
 
 /*以下m3*/
 /*一下公共样式*/
@@ -286,7 +287,7 @@ footer {
     color: #1d7ad9;
 }
 .f1-right img {
-    display: inline;
+    /*display: inline;多余*/
     width: 92px;
     height: 92px;
 
