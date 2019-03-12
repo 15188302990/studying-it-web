@@ -1,0 +1,139 @@
+.h-and-f-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+}
+.skill-box {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  height: auto!important;
+  border: none;
+  border-bottom: solid 1px #C6C6C8;
+  margin: 0 1rem;
+}
+body {
+  min-width: 320px;
+  max-width: 720px;
+  margin: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  color: #fff;
+  background-color: #5fc0cd;
+}
+header img {
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+main {
+  margin-top: 3rem;
+}
+main .information-1 {
+  display: flex;
+  align-items: center;
+  height: 12rem;
+  background: url(./images-personal/background.png) no-repeat center;
+  background-size: 100% 100%;
+}
+main .information-1 img {
+  display: inline;
+  width: 6rem;
+  margin: 0 1rem;
+}
+main .information-1 .user {
+  display: inline;
+  font-size: 1rem;
+  color: #fff;
+}
+main .information-1 .user img {
+  width: 1rem;
+  margin: 0;
+}
+main .information-2 {
+  padding-bottom: 5rem;
+}
+main .information-2 p {
+  margin: 0;
+}
+main .information-2 .skill {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  height: auto!important;
+  border: none;
+  border-bottom: solid 1px #C6C6C8;
+  margin: 0 1rem;
+}
+main .information-2 .skill .skill-1 p {
+  padding-left: 0.3rem;
+  border-left: solid 1px #5fc0cd;
+}
+main .information-2 .skill img {
+  width: 1rem;
+  vertical-align: bottom;
+}
+main .information-2 .skill p {
+  padding: 0 0.6rem;
+}
+main .information-2 .skill span {
+  padding: 0 0.6rem;
+  min-width: 5.3rem;
+  border-right: solid 1px black;
+  color: #C6C6C8;
+}
+main .information-2 .skill .skill_52 {
+  color: #E76F6E;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+  position: fixed;
+  bottom: 0.5rem;
+  background-color: #fff;
+}
+button {
+  width: 48%;
+  height: 98%;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0.9%;
+}
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.footer_btn1 {
+  border: solid 1px #5fc0cd;
+  color: #5fc0cd;
+  background-color: #fff;
+}
+.footer_btn2 {
+  border: solid 1px #5fc0cd;
+  background-color: #5fc0cd;
+}
+/*# sourceMappingURL=Task12-personal.css.map */
