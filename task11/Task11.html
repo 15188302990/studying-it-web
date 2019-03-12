@@ -12,30 +12,29 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="row">
+
 <header>
     <img class=h-left src="images/h-l-icon.png" alt="back">
     <span class="h-mid">登录</span>
 </header>
-</div>
 
 
-    <div class="row">
+
+
 <main >
     <div class="account">
         <img class="m-icon-1" src="images/icon_phone.png" alt="phone">
-        <input  type="text" name="num" placeholder="请输入手机号" >
+        <input  type="text" name="num" placeholder="请输入手机号" maxlength="11" onkeyup="value=value.replace(/[^0-9-]+/,'');">
     </div>
     <div class="password">
         <img class="m-icon-2" src="images/icon_locked.png" alt="password">
-        <input  type="password" name="password" placeholder="请输入密码" >
+        <input  type="password" name="password" placeholder="请输入密码" maxlength="18">
     </div>
     <div class="button">登&nbsp;&nbsp;&nbsp;录</div>
 </main>
-    </div>
 
-        <div class="row">
+
+
 <footer>
 <div class="f-1">
     <p>立即注册</p>

@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-  background-color: #eff0f4;
+  min-width: 320px;
+  max-width: 720px;
+  margin: auto;
 }
 body header {
   display: flex;
@@ -18,6 +19,7 @@ body header img {
 }
 body main {
   width: 100%;
+  background-color: #eff0f4;
 }
 body main .account,
 body main .password {
@@ -67,6 +69,7 @@ body main .button {
 body footer {
   width: 100%;
   font-size: 0.3rem;
+  background-color: #eff0f4;
 }
 body footer .f-1 {
   display: flex;
@@ -79,6 +82,7 @@ body footer .f-1 p {
 }
 body footer .f-logo {
   margin-top: 10rem;
+  padding-bottom: 10rem;
 }
 body footer .f-logo .title-box {
   height: 30px;

@@ -4,11 +4,14 @@
 @text-color-1:#fff;
 @text-color-2:#bababa;
 @text-color-3:#1ba2ea;
+@min-width:320px;
+@max-width:720px;
 
 body {
-  margin: 0;
+  min-width: @min-width;
+  max-width: @max-width;
+  margin: auto;
 
-  background-color: @bg-color-1;
     header {
       display: flex;
       align-items: center;
@@ -25,6 +28,7 @@ body {
     }
     main {
       width: 100%;
+      background-color: @bg-color-1;
       .account,.password {
         display:flex;
         align-items: center;
@@ -69,6 +73,7 @@ body {
     footer {
       width: 100%;
       font-size: .3rem;
+      background-color: @bg-color-1;
       .f-1 {
         display: flex;
         align-items: center;
@@ -79,6 +84,7 @@ body {
       }
       .f-logo {
         margin-top: 10rem;
+        padding-bottom: 10rem;
         .title-box{
           height: 30px;
           display: flex;
