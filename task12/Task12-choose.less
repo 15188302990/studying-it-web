@@ -35,20 +35,18 @@ body {
 }
 
 header {
-  .h-and-f-box();
   position:fixed;
   top: 0;
   z-index: 1;
+  .h-and-f-box();
   background-color: @bg-color-1;
   .h-1 {
     .flex-box();
-    width: 100%;
     padding: 1rem 0;
     button{
       height: 2rem;
       padding: 0 .6rem;
       border: none;
-      outline: none;
       &:hover {cursor:pointer};
     }
     .bt-1 {
@@ -74,7 +72,6 @@ header {
 }
   .h-2{
     .flex-box();
-    width: 100%;
     border-bottom: solid 1px #e1e5e7;
     color: #999;
     background-color: #fff;
@@ -143,12 +140,13 @@ main {
 
 
 footer {
-  .h-and-f-box();
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-around;
   text-align: center;
+  .h-and-f-box();
+
   background: #f8fafb;
   img {
     width: 2rem;

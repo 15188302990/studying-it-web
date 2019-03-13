@@ -6,13 +6,11 @@
   max-width: 720px;
   width: 100%;
   height: 3rem;
-  margin: auto;
 }
 .skill-box {
   display: flex;
   align-items: center;
   min-height: 4rem;
-  height: auto!important;
   border: none;
   border-bottom: solid 1px #C6C6C8;
   margin: 0 1rem;
@@ -23,6 +21,8 @@ body {
   margin: auto;
 }
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,15 +30,15 @@ header {
   max-width: 720px;
   width: 100%;
   height: 3rem;
-  margin: auto;
-  position: fixed;
-  top: 0;
   color: #fff;
   background-color: #5fc0cd;
 }
 header img {
   margin-left: 1rem;
   vertical-align: middle;
+}
+header .h-space-box {
+  width: 2.375rem;
 }
 main {
   margin-top: 3rem;
@@ -74,7 +74,6 @@ main .information-2 .skill {
   display: flex;
   align-items: center;
   min-height: 4rem;
-  height: auto!important;
   border: none;
   border-bottom: solid 1px #C6C6C8;
   margin: 0 1rem;
@@ -100,6 +99,8 @@ main .information-2 .skill .skill_52 {
   color: #E76F6E;
 }
 footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,33 +108,29 @@ footer {
   max-width: 720px;
   width: 100%;
   height: 3rem;
-  margin: auto;
-  position: fixed;
-  bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: #fff;
 }
-button {
-  width: 48%;
-  height: 98%;
+footer a {
+  width: 46%;
+  height: 46%;
+  padding: 1%;
   border-radius: 5px;
-  padding: 0;
-  margin: 0.9%;
-}
-button a {
-  color: #fff;
-  text-decoration: none;
-}
-button a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.footer_btn1 {
   border: solid 1px #5fc0cd;
+  margin: 1%;
+  text-align: center;
+  text-decoration: none;
+}
+footer .f-1 {
   color: #5fc0cd;
   background-color: #fff;
 }
-.footer_btn2 {
-  border: solid 1px #5fc0cd;
+footer .f-2 {
+  color: #fff;
   background-color: #5fc0cd;
+}
+footer .f-2:hover {
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=Task12-personal.css.map */

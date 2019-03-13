@@ -15,13 +15,11 @@
   max-width: @max-width;
   width: 100%;
   height: 3rem;
-  margin: auto;
 }
 .skill-box {
   display: flex;
   align-items: center;
   min-height: 4rem;
-  height: auto!important;
   border: none;
   border-bottom: solid 1px @text-color-3;
   margin: 0 1rem;
@@ -36,14 +34,18 @@ body {
   margin: auto;
 }
 header {
-  .h-and-f-box();
   position:fixed;
   top: 0;
+  .h-and-f-box();
+
   color: @text-color-1;
   background-color: @bg-color-1;
   img {
     margin-left: 1rem;
     vertical-align: middle;
+  }
+  .h-space-box {
+    width: 2.375rem;
   }
 }
 main {
@@ -116,37 +118,37 @@ main {
 }
 
 footer{
-  .h-and-f-box();
   position:fixed;
-  bottom: .5rem;
+  bottom: 0;
+  .h-and-f-box();
+  padding-bottom: .5rem;
   background-color: @text-color-1;
-}
-button{
-  width: 48%;
-  height: 98%;
-  border-radius:5px;
-  padding: 0;
-  margin: 0.9%;
   a {
-  color:@text-color-1 ;
-  text-decoration: none;
+    width: 46%;
+    height: 46%;
+    padding: 1%;
+    border-radius: 5px;
+    border: solid 1px @bg-color-1;
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .f-1 {
+      color: @bg-color-1;
+      background-color: @text-color-1;
+  }
+  .f-2 {
+    color: @text-color-1 ;
+    background-color: @bg-color-1;
     &:hover {
       color:@text-color-1 ;
       text-decoration: none;
     }
-}
+
+  }
+
 }
 
-.footer_btn1 {
-  border:solid 1px @bg-color-1;
-  color: @bg-color-1;
-  background-color: @text-color-1;
-}
-.footer_btn2 {
 
-  border:solid 1px @bg-color-1;
-
-  background-color: @bg-color-1;
-}
 
 
