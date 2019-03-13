@@ -280,7 +280,7 @@ footer {
 }
 @media screen and (max-width: 992px) {
     .f1-right {
-        justify-content: start;
+        display: block;
     }
 }
 .f1-mid span:hover {
@@ -290,15 +290,15 @@ footer {
     /*display: inline;多余*/
     width: 92px;
     height: 92px;
-
 }
 .f1-r p {
     margin-bottom: 7px;
 }
 
 .f2 {
-    padding: 5px 0;
+    padding: 15px 0;
     color: #fff;
+    font-size: 12px;
     text-align: center;
     background-color: #1d7ad9;
 }
