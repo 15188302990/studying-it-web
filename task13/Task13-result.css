@@ -1,0 +1,129 @@
+.position-style {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.h-and-f-style {
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+}
+.flex-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html {
+  font-size: 50px;
+}
+body {
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+}
+p {
+  margin: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+  height: 1rem;
+  font-size: 0.4rem;
+  color: #fff;
+  background-color: #29bde0;
+}
+header img {
+  width: 0.5rem;
+  /*改写图片大小*/
+  height: 0.5rem;
+  margin: 0 0.5rem;
+}
+main {
+  margin-top: 1rem;
+}
+.m1 {
+  padding: 0 0.5rem;
+  background-color: #29bde0;
+}
+.m1 .m1-logo {
+  text-align: center;
+}
+.m1 .m1-p1 {
+  margin: 0.3rem 0;
+  font-size: 0.4rem;
+  color: #ffc865;
+  text-align: justify;
+}
+.m1 .m1-detail {
+  font-size: 0.3rem;
+  color: #fff;
+}
+.m1 .m1-detail-role {
+  height: 0.8rem;
+}
+.m1 .m1-detail-role .role {
+  float: left;
+  width: 30%;
+}
+.m2-process {
+  padding: 0 0.5rem;
+  border-bottom: solid 1px #ddd;
+}
+.m2-process .m2-process-1 {
+  display: flex;
+  justify-content: space-between;
+  /*左右布局*/
+}
+.m2-process .m2-process-1 span {
+  display: inline-block;
+}
+.m2-process .m2-process-1 .m2-span-date {
+  font-size: 0.4rem;
+}
+.m2-process .m2-process-1 .m2-span-time {
+  font-size: 0.3rem;
+  color: #a6a6a6;
+}
+.m2-process p {
+  font-size: 0.28rem;
+  color: #a6a6a6;
+}
+.m3 {
+  height: 20vh;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  background: rgba(41, 189, 224, 0.5) none repeat scroll !important;
+}
+footer a {
+  width: 100%;
+  line-height: 0.72rem;
+  border-radius: 5px;
+  margin: 0.24rem;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.footer_btn1 {
+  background-color: #f66f6f;
+}
+.footer_btn2 {
+  background-color: #fbb435;
+}
+/*# sourceMappingURL=Task13-result.css.map */
