@@ -4,11 +4,11 @@
   justify-content: space-between;
 }
 .test-style-1 {
-  font-size: 0.3rem;
   background-color: #fff;
 }
 html {
   font-size: 50px;
+  overflow: hidden;
 }
 body {
   min-width: 320px;
@@ -16,8 +16,6 @@ body {
   margin: auto;
   /*居中*/
   background-color: #f0f0f0;
-}
-.content {
   overflow: hidden;
   /*主体移动，但超出部分隐藏，就不会出现横向滚动条*/
   position: relative;
@@ -115,16 +113,15 @@ body #wrap .b-last-game {
   justify-content: space-between;
   height: 1.5rem;
   border: solid 1px #d0d0d0;
-  margin: 0.2rem 0 0.2rem 0.2rem;
+  margin: 0.2rem;
   color: #9a9a9a9a;
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   background-color: #fff;
 }
 body #wrap .b-game-version {
   border: solid 1px #d0d0d0;
   border-bottom: none;
-  margin-left: 0.2rem;
-  font-size: 0.3rem;
+  margin: 0 0.2rem;
   background-color: #fff;
 }
 body #wrap .b-game-version .p-game {
@@ -132,12 +129,14 @@ body #wrap .b-game-version .p-game {
   padding: 0.5rem 0;
   margin: 0;
   color: #fbb435;
+  font-size: 0.4rem;
 }
 body #wrap .b-game-version .gv {
   position: relative;
   /*为了图标以父gv容器*/
   display: block;
   border: none;
+  font-size: 0.3rem;
 }
 body #wrap .b-game-version .gv a {
   text-decoration: none;

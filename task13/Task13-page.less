@@ -9,27 +9,27 @@
   align-items: center;
   justify-content: space-between;}
 .test-style-1{
-  font-size: 0.3rem;
   background-color: #fff;
 }
 
-html {font-size: 50px;
+html {
+  font-size: 50px;
+  overflow: hidden;
 }
 body {
   min-width: 320px;
   max-width: 780px;
   margin: auto;/*居中*/
   background-color: #f0f0f0;
-
-}
-.content{
   overflow: hidden;/*主体移动，但超出部分隐藏，就不会出现横向滚动条*/
   position: relative;
 }
+
 body {/*input和侧边栏aside，*/
   #sidemenu{/*sidemenu第一他代表了input的名字；第二是作为input和label的连接器；*/
     display: none;/*使input隐藏*//*隐藏checked复选框*/
     &:checked + aside {/*为被选中的sidemenu后的aside设置属性（紧邻）*/
+
       left: 0;/*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
     }
     &:checked ~ #wrap {/*为被选中的sidemenu后的wrap设置属性（非紧邻）*//*wrap是主体内容*/
@@ -94,25 +94,28 @@ body {
       .flex-box-1();
       height: 1.5rem;
       border: solid 1px #d0d0d0;
-      margin: 0.2rem 0 0.2rem 0.2rem;
+      margin: 0.2rem;
       color: #9a9a9a9a;
+      font-size: .5rem;
       .test-style-1();
     }
     .b-game-version {
       border: solid 1px #d0d0d0;
       border-bottom: none;
-      margin-left: .2rem;
+      margin:0 .2rem;
       .test-style-1();
       .p-game {
         border-bottom: solid 1px #fdd793;
         padding: .5rem 0;
         margin: 0;
         color: #fbb435;
+        font-size: .4rem;
       }
       .gv {
         position: relative;/*为了图标以父gv容器*/
         display: block;
         border: none;
+        font-size: .3rem;
         a {
           text-decoration: none;
         }
@@ -127,7 +130,6 @@ body {
           margin: 0;
           color:#787878;
         }
-
 
       }
       .i {
