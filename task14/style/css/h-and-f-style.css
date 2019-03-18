@@ -1,0 +1,102 @@
+.flex-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-style-1 {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+/*以下是h1*/
+.h-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 39px;
+}
+.h-1 .h1-text,
+.h-1 .h1-login {
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #29b078;
+  line-height: 11px;
+}
+.h-1 .h1-icon-box img {
+  width: 22px;
+  height: 22px;
+}
+.h-1 .h1-icon-box .h1-icon-mid {
+  margin: 0 20px;
+}
+.h-1 .h1-login {
+  display: none;
+}
+@media (max-width: 768px) {
+  .h-1 .h1-icon-box > img {
+    display: none;
+    /*如果设置h1-icon-box为display：none，则这个元素将彻底消失，不能帮助h1-login在右。
+      不能使h-1的justify-content: space-between发挥效应*/
+  }
+  .h-1 .h1-login {
+    display: block;
+  }
+  .h-1 .h1-text {
+    display: none;
+  }
+}
+/*以上是h1*/
+.h-2 {
+  background-color: #29b078;
+}
+.h-2 .row {
+  margin: 0;
+}
+/*以上是h2*/
+/*以下是对footer的修饰*/
+footer {
+  background-color: #29b078;
+}
+footer .row {
+  margin: 0;
+}
+.f1 {
+  padding: 10px 15px;
+  color: #fff;
+}
+@media (max-width: 575px) {
+  .f1 .col-sm-2 {
+    float: none;
+  }
+}
+.f1-content-2 {
+  min-height: 20px;
+}
+.f1-content-1,
+.f1-content-2,
+.f1-content-2 {
+  margin-bottom: 10px;
+}
+.f1 a {
+  color: white;
+  text-decoration: none;
+}
+.f1 a:hover {
+  text-decoration: underline;
+}
+/*以上是对f1的修饰*/
+/*以下是对f2的修饰*/
+.f2 {
+  padding: 10px 15px;
+  border-top: solid 1px #32c086;
+  color: #fff;
+  text-align: center;
+}
+/*以上是对f2的修饰*/
+/*# sourceMappingURL=h-and-f-style.css.map */

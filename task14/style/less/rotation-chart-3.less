@@ -1,0 +1,131 @@
+.rotation-chart {
+  /*以下是设置input*/
+  input{/*隐藏input的默认圆点框*/
+    display: none;
+  }
+  /*以上是设置input*/
+
+  /*以下是设置所有内容*/
+  #rotation-chart-content {/*input所联系的所有内容大盒子*/
+    width: 100%;
+    overflow: hidden;/**/
+    position: relative;
+
+    /*以下是设置图片*/
+    ul {/*轮播图片盒子*/
+      padding: 0;
+      margin: 0;
+      //margin-left: 0;
+      width: 300%; /*因为3个图片*/
+      img {
+        width: 33.33%;/*slider是300%那一张图片就是300%*33.33%=100%*/
+        height: 30vw;
+        float: left; /*轮播的原理之一，让他们排列到一行上，所以slider的宽度是300%；然后通过input让他们每次移动100%即实现图片转换*/
+      }
+    }
+    /*以上是设置图片*/
+
+    /*以下是设置圆点*/
+    #rotation-chart-dot {/*圆点盒子，为了使3个圆点成一行，且利用调整所在位置*/
+      display: flex;
+      justify-content: center;/*使圆点居中*/
+      position: absolute;/*圆点所在的位置*/
+      width: 100%;
+      top: 75%;
+      label { /*设置为圆点形状*/
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;/*设置为圆点形状*/
+        margin-right: 30px;
+        border: 1px solid #d0d6d9;
+        cursor: pointer; /*设置光标为小手*/
+        &:hover {/*设置hover效果*/
+          background: #d0d6d9; }
+      }
+    }
+    /*以上是设置圆点*/
+    /*以下是设置箭头*/
+    #row1,#row2,#row3 {
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      width: 10px;
+      height: 10px;
+      border-top: 5px solid #e7e7e7;
+      border-right: 5px solid #e7e7e7;
+      cursor: pointer; }
+
+    #row1 {
+      transform: rotate(-133deg);
+    }
+    #row2 {
+      transform: rotate(45deg);
+      display: none;
+    }
+    #row3 {
+      transform: rotate(-133deg);
+      display: none; }
+    /*以上是设置箭头*/
+    label {
+      cursor: pointer; }
+  }
+  /*以下是checked查询*/
+
+  /*以下input（图片）与圆点联系到一起*/
+  #picture-1:checked ~ #rotation-chart-content #dot1 {
+    background-color: #d0d6d9; }
+
+  #picture-2:checked ~ #rotation-chart-content #dot2 {
+    background-color: #d0d6d9; }
+
+  #picture-3:checked ~ #rotation-chart-content #dot3 {
+    background-color: #d0d6d9; }
+  /*以上input（图片）与圆点联系*/
+
+
+  /*input与图片联系到一起*/
+  #picture-1:checked ~ #rotation-chart-content ul {
+    margin-left: 0; }
+
+  #picture-2:checked ~#rotation-chart-content ul {
+    margin-left: -100%; }
+
+  #picture-3:checked ~ #rotation-chart-content ul {
+    margin-left: -200%; }
+  /*以上input与图片联系*/
+
+
+  /*以下input（图片）与箭头联系到一起*/
+  #picture-1:checked ~ #rotation-chart-content #row2 {/*控制箭头的位置*/
+    display: block;
+    cursor: pointer;
+    left: 90%; }
+
+  #picture-1:checked ~ #rotation-chart-content #row3 {
+    display: block;
+    cursor: pointer; }
+
+
+  #picture-2:checked ~ #rotation-chart-content #row1 {
+    display: block;
+    cursor: pointer; }
+
+  #picture-2:checked ~ #rotation-chart-content #row3 {
+    left: 90%;
+    display: block;
+    cursor: pointer;
+    transform: rotate(45deg); }
+
+  #picture-3:checked ~ #rotation-chart-content #row2 {
+    display: block;
+    cursor: pointer;
+    left: 8%;
+    transform: rotate(-133deg); }
+
+  #picture-3:checked ~ #rotation-chart-content #row1 {
+    display: block;
+    cursor: pointer;
+    left: 90%;
+    transform: rotate(45deg); }
+  /*以上input（图片）与箭头联系*/
+}

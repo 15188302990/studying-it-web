@@ -1,0 +1,273 @@
+html {
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background-color: #fafafa;
+}
+
+
+/*以上是对header的修饰*/
+
+/*以下是对menu的修饰*/
+.menu {
+  .menu-1-box,.menu-2-box {
+     padding-top: 15px;
+     padding-bottom: 15px;
+     border-bottom: thin solid #d0d6d9;
+    }
+  .menu-1-box {
+    span {
+      a {color: black;}
+    }
+    a {color: #29b078;}
+  }
+  .menu-2-box {
+    span {
+      a{
+      color: black;
+      &:hover{
+        color: #fff;
+        background-color: #29b078;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      }
+    }
+  }
+}
+
+
+
+/*以上是对menu的修饰*/
+
+
+/*以下是对表格的修饰*/
+.profession {
+  a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #d0d6d9;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .row {
+    margin: 0;
+  }
+}
+
+
+
+.wrapper{
+  display: grid;
+  position: relative;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 180px 30px 30px 30px 30px 30px 30px 30px;
+  color: #c6c6c6;
+  max-width: 450px;
+  border:1px solid #c6c6c6;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+.form {
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+/*.box-one{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-image: url(images-profession/pf-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}*/
+
+.box-one{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.box-one img {
+  width: 80%;
+  min-width: 110px;
+}
+
+
+
+
+
+.box-two{
+  grid-column-start: 11;
+  grid-column-end: 5;
+  padding: 20px 0;
+  color: black;
+}
+.box-two-1{
+  margin-top: 18px;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-three{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  padding-left: 10px;
+  border-top: 1px solid #d0d6d9;
+  border-right: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+  line-height: 29px;
+}
+
+.box-four{
+  grid-column-start: 11;
+  grid-column-end: 6;
+  padding-left: 10px;
+  border-top: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+  line-height: 29px;
+}
+
+.box-five{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  padding-left: 10px;
+  border-right: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+  line-height: 29px;
+}
+.box-five-1,.box-six-1,.box-thirteen-1{
+  color: #f01400;
+}
+
+.box-six{
+  grid-column-start: 11;
+  grid-column-end: 6;
+  padding-left: 10px;
+  border-bottom: 1px solid #d0d6d9;
+  line-height: 29px;
+}
+.box-six-2 {
+  color: #000;
+}
+
+.box-seven{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.box-eight{
+  grid-column-start: 11;
+  grid-column-end: 5;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.box-eight-1,.box-ten-1,.box-twelve-1 {
+  color: black;
+}
+
+.box-nine{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+  line-height: 30px;
+}
+.box-ten{
+  grid-column-start: 11;
+  grid-column-end: 5;
+  border-left: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.box-eleven{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-bottom: 1px solid #d0d6d9;
+}
+.box-twelve{
+  grid-column-start: 11;
+  grid-column-end: 5;
+  border-left: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.box-thirteen{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  padding-left: 10px;
+  border-bottom: 1px solid #d0d6d9;
+  color: #000;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.box-zero{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  padding-left: 10px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+.box-fifteen{
+  display: none;
+  position: absolute;
+  text-align: center;
+  padding: 80px 40px 40px 40px;
+  height: 390px;
+  background-color: #3d3d3d;
+  opacity: 0.9;
+  -webkit-animation: cartoon 1s;
+}
+
+
+@keyframes cartoon {
+  0%{
+    -webkit-transform: rotateY(0deg);
+  }
+  100%{
+    -webkit-transform: rotateY(720deg);
+  }
+}
+
+.wrapper:hover .box-fifteen{
+  display: block;
+}
+
+
+
+
+
+
+
+/*以下是出现下划线的修饰*/
+//.m5-content:hover{text-decoration:underline;}
+//
+//.a:hover {text-decoration:underline;}
+
+@media (max-width: 540px) {
+  .row {
+    margin: 0!important;
+  }
+}

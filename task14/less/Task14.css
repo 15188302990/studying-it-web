@@ -1,0 +1,209 @@
+.flex-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-style-1 {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+.m1 .m1-h {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.m1 .m1-col {
+  height: 260px;
+  padding: 45px 30px 45px 15px;
+  text-align: center;
+}
+.m1 .m1-col img {
+  height: 60px;
+}
+.m1 .m1-col-fourth {
+  padding: 45px;
+  border-left: 1px dashed #afafaf;
+}
+@media (max-width: 992px) {
+  .m1 .m1-col-fourth {
+    border: none;
+    text-align: center;
+  }
+}
+.m1 .m1-col-fourth span {
+  display: block;
+  margin-top: 25px;
+}
+/*以上是对m1的修饰*/
+/*以下是对m2的修饰*/
+.m2-h {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.m2-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+.m2-col span {
+  float: left;
+  min-width: 50px;
+  min-height: 50px;
+  border: solid 1px #ececec;
+  border-radius: 50%;
+  line-height: 50px;
+  color: #29b078;
+  text-align: center;
+  background-color: #fff;
+}
+.m2-col p {
+  margin: 0;
+  text-align: center;
+}
+/*以上是对m2的修饰*/
+/*以下是对m3的修饰*/
+.m3-h {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.m3-col {
+  padding: 50px 0;
+  border: solid 5px #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #afafaf;
+  text-align: center;
+  background-color: #fff;
+}
+.m3-col:hover {
+  border: solid 5px #afafaf;
+  box-shadow: none;
+}
+.m3-col img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.m3-circular {
+  display: flex;
+  justify-content: center;
+  margin: 2vw;
+  text-align: center;
+}
+.circular1 {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+.circular1:hover {
+  background-color: #29b078;
+}
+/*以上是对m3的修饰*/
+/*以下是对m4的修饰*/
+.m4 .row {
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+.m4-h {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.m4-content {
+  display: flex;
+  height: 200px;
+  margin: 0;
+  border: 2px solid #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.m4-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .m4-col {
+    flex: 0 0 19%!important;
+    max-width: 19%!important;
+    margin: 0.5% !important;
+  }
+}
+.m4-box {
+  padding: 2px;
+  background-color: #fff;
+}
+.m4-content:hover {
+  box-shadow: black 0 0 10px;
+}
+/*以上是对m4的修饰*/
+/*以下是对m5的修饰*/
+.m5 {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.m5 .m5-h {
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.m5 .m5-col {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .m5 .m5-col {
+    flex: 0 0 9% !important;
+    max-width: 9% !important;
+    margin: 0.5% !important;
+  }
+}
+.m5 .m5-col a {
+  min-width: 76px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  color: #afafaf;
+  text-decoration-color: white;
+}
+.m5 .m5-col a:hover {
+  text-decoration-color: white;
+  border-bottom: 1px solid #29b078;
+}
+.m5 .m5-col a span {
+  display: inline-block;
+  border: 4px solid #afafaf;
+  border-radius: 50%;
+  margin: 2px 2px;
+}
+/*以上是对m5的修饰*/
+/*以下是出现下划线的修饰*/
+.m5-content:hover {
+  text-decoration: underline;
+}
+.a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 540px) {
+  .row {
+    margin: 0!important;
+  }
+}
+/*# sourceMappingURL=Task14.css.map */
