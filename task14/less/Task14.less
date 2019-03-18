@@ -51,6 +51,7 @@ body{
 .m2-col {
   .flex-style-1();
   padding: 0;
+  margin-bottom: 3px;
   span {
     float: left;
     min-width: 50px;
@@ -123,10 +124,12 @@ body{
   justify-content: center;
   align-items: center;
   background-color: white;
+  .m4-img-1{
+    max-height: 178px;
+  }
 }
 .m4-col {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 5px 0;
   @media (min-width: 992px) {
     flex: 0 0 19%!important;
     max-width: 19%!important;
@@ -189,9 +192,19 @@ body{
 
 .a:hover {text-decoration:underline;}
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .row {
     margin: 0!important;
+  }
+}
+@media (max-width: 576px) {
+  .m3-col {
+    margin: .5%!important;
+  }
+}
+@media (max-width: 768px) {
+  .m4-col {
+    margin: 5px 0!important;
   }
 }
 

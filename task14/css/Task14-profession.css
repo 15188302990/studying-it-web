@@ -123,6 +123,7 @@ body {
   padding-left: 10px;
   border-bottom: 1px solid #d0d6d9;
   line-height: 29px;
+  overflow: hidden;
 }
 .box-six-2 {
   color: #000;

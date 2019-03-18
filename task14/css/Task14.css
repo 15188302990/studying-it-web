@@ -54,6 +54,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  margin-bottom: 3px;
 }
 .m2-col span {
   float: left;
@@ -133,9 +134,11 @@ body {
   align-items: center;
   background-color: white;
 }
+.m4-content .m4-img-1 {
+  max-height: 178px;
+}
 .m4-col {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 5px 0;
 }
 @media (min-width: 992px) {
   .m4-col {
@@ -201,9 +204,19 @@ body {
 .a:hover {
   text-decoration: underline;
 }
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .row {
     margin: 0!important;
+  }
+}
+@media (max-width: 576px) {
+  .m3-col {
+    margin: 0.5% !important;
+  }
+}
+@media (max-width: 768px) {
+  .m4-col {
+    margin: 5px 0!important;
   }
 }
 /*# sourceMappingURL=Task14.css.map */
