@@ -14,8 +14,16 @@
   max-width: @max-width;
   width: 100%;
 }
-.ctt-box {
+.ctt-box-1and3 {
   display: flex;
+  margin-left: 1rem;
+  align-items: center;
+  color:#999;
+}
+.ctt-box-2 {
+  display: flex;
+  margin-left: 2.5rem;
+  margin-right: 1.5rem;
   align-items: center;
   color:#999;
 }
@@ -82,7 +90,9 @@ header {
       line-height: 2rem;
       text-align: center;
       cursor: pointer;
-      &:hover ul {display: block;}
+      &:hover ul {
+        display: block;
+        margin: 0;}
 
       ul {
         position: absolute;
@@ -118,20 +128,23 @@ main {
     border-bottom: solid 1px #999;
 
     .content1,.content3 {
-      .ctt-box();
+      .ctt-box-1and3();
       img {
         .img-box();
         transform: scale(.8);
       }
     }
     .content2 {
-      .ctt-box();
-      margin-left: 1.5rem;
+      .ctt-box-2();
       .date {width: 100%;}
-      .price {width: 5rem;color: red;}
+      .price {
+        width: 5rem;
+        color: red;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
       img {
-        .img-box();
-        margin-right:.5rem;
       }
     }
   }
