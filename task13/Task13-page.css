@@ -86,6 +86,9 @@ body aside ul a li {
   font-size: 0.3rem;
   list-style: none;
 }
+body aside ul a .icon {
+  width: 16px;
+}
 body #wrap {
   /*主体*/
   transition: 0.2s ease-out;
