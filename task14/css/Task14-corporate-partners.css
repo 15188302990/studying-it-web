@@ -98,6 +98,11 @@ li:hover .correct {
   text-align: justify;
   vertical-align: middle;
 }
+@media (max-width: 1199px) {
+  .introduction-1 p {
+    margin: 0 ;
+  }
+}
 .introduction-2 {
   padding: 20px;
   color: #999;
