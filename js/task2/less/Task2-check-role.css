@@ -1,0 +1,84 @@
+.flex-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-style-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;
+  height: 100vh;
+  background-color: white;
+}
+header {
+  background-color: #29bde0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.91rem;
+}
+header .container img {
+  height: 1.25rem;
+}
+header .container span {
+  font-size: 1.1rem;
+  color: #fff;
+}
+header .container [type=button] {
+  -webkit-appearance: none;
+}
+main {
+  padding-top: 1.5rem;
+  text-align: center;
+  background-color: #29bde0;
+}
+main .role-num {
+  position: relative;
+  width: 2.5rem;
+  border: 0.125rem solid #ffedc5;
+  border-radius: 50%;
+  margin: 0 auto -1.5rem auto;
+  line-height: 2.25rem;
+  color: #f56b81;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #fff;
+}
+main .role-content {
+  width: 14rem;
+  margin: auto;
+  border: 0.1875rem solid #fff;
+  border-radius: 5px;
+  background-color: #ffedc5;
+  line-height: 23rem;
+}
+main .role-content img {
+  width: 8.5rem;
+  height: 8.5rem;
+}
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #29bde0;
+}
+footer button {
+  width: 70%;
+  height: 2.75rem;
+  outline: none;
+  border: 1px solid #ffa500;
+  font-size: 1.25rem;
+  color: #fff;
+  background: #ffa600;
+}
+footer button:hover {
+  color: #ffa500;
+  background-color: #fff;
+}
+/*# sourceMappingURL=Task2-check-role.css.map */

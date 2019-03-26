@@ -1,0 +1,226 @@
+.flex-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-style-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;
+  height: 100vh;
+}
+body {
+  background-color: #f0f0f0;
+}
+header {
+  background-color: #29bde0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.91rem;
+}
+header .container img {
+  height: 1.25rem;
+}
+header .container span {
+  font-size: 1.1rem;
+  color: #fff;
+}
+header [type=button] {
+  -webkit-appearance: none;
+}
+main {
+  overflow: hidden;
+}
+main .m1 {
+  display: grid;
+  position: relative;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
+  padding: 15px 15px 0.25rem 15px;
+}
+main .m1 .item-h {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  border-right: solid #d9d9d9;
+  background-color: #fff;
+}
+main .m1 .item-h p {
+  margin: 3rem 0;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+}
+main .m1 .item-b-1 {
+  display: flex;
+  align-items: flex-start;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-color: #fbfbfb;
+}
+main .m1 .item-b-1 p {
+  display: inline-block;
+  width: 0;
+  border: 0.15rem solid #FAB344;
+  margin: 0 0.25rem 0 0;
+}
+main .m1 .item-b-1 span {
+  font-size: 0.8rem;
+}
+main .m1 .item-b-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  border-top: solid #d9d9d9;
+  font-size: 0.8rem;
+  color: #29bde0;
+  background-color: #fbfbfb;
+}
+main .m1 .item-b-2 img {
+  width: 0.5rem;
+  padding-top: 0.25rem;
+}
+main .m2 {
+  padding: 0;
+  margin: 0 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+main .m2 p {
+  height: 2.1875rem;
+  padding: 0.46875rem;
+  margin: 0.46875rem;
+  border-bottom: 0.0625rem solid #d9d9d9;
+  font-size: 0.875rem;
+  color: #a1a1a1;
+}
+main .m2 p input {
+  border: none;
+  font-size: 0.8rem;
+}
+main .m3 {
+  padding: 0;
+  margin: 0.25rem 15px;
+  font-size: 0.875rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+main .m3 p {
+  height: 2.1875rem;
+  padding: 0.46875rem;
+  margin: 0.46875rem;
+  font-weight: bold;
+}
+main .m3 p input {
+  width: 1.875rem;
+  height: 1.3125rem;
+  margin: 0 0.6rem;
+  font-size: 1rem;
+  color: #FAB344;
+  text-align: center;
+}
+main .m3 p input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+main .m3 p input[type="number"] {
+  -moz-appearance: textfield;
+}
+main .m3 p span {
+  color: #FAB344;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+main .m3 .going {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 2.1875rem;
+}
+main .m3 .going button {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 ;
+  border: 2px solid #f1f1f1;
+  font-size: 1.2rem;
+  line-height: 0.8rem;
+  color: #ffa600;
+  background-color: #fff;
+  outline: none;
+}
+main .m3 .going button:active {
+  color: #fafafa;
+}
+main .m3 .going input {
+  width: 60%;
+}
+main .m3 .going input[type="range"] {
+  -webkit-appearance: none;
+  height: 0.3rem;
+  background-color: #ffa600;
+}
+main .m3 .going input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: default;
+  /*top: -5px;*/
+  height: 1rem;
+  width: 1.5rem;
+  border: 2px solid #ffa600;
+  /*transform: translateY(-4px);*/
+  background: url("../images/role-num/展开按钮icon.png") no-repeat center;
+  background-size: 60% 60%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+footer {
+  padding: 0 15px;
+  background-color: #f0f0f0;
+}
+footer button {
+  width: 100%;
+  height: 2.75rem;
+  outline: none;
+  border: 1px solid #ffa500;
+  font-size: 1.25rem;
+  color: #fff;
+  background: #ffa600;
+}
+footer button:hover {
+  color: #ffa500;
+  background-color: #fff;
+}
+.aaa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: #a1a1a1;
+}
+input {
+  outline: none;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: none;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
+/*# sourceMappingURL=Task2-role-num.css.map */
