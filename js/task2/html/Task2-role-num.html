@@ -38,8 +38,8 @@
     <div class="m1 ">
         <div class="item-h"><p>玩<br>家<br>配<br>比</p></div>
         <div class="item-b-1">
-            <div class="aaa"><p></p><span id="killerNum">杀&nbsp;&nbsp;&nbsp;&nbsp;手&nbsp;&nbsp;1&nbsp;&nbsp;人 </span></div>
-            <div class="aaa"><p></p><span id="civilianNum">平&nbsp;&nbsp;&nbsp;&nbsp;民&nbsp;&nbsp;1&nbsp;&nbsp;人 </span></div>
+            <div class="aaa"><p></p><span id="killerNum">杀&nbsp;&nbsp;&nbsp;&nbsp;手&nbsp;&nbsp;2&nbsp;&nbsp;人 </span></div>
+            <div class="aaa"><p></p><span id="civilianNum">平&nbsp;&nbsp;&nbsp;&nbsp;民&nbsp;&nbsp;6&nbsp;&nbsp;人 </span></div>
 
         </div>
         <div class="item-b-2">点击设置<img src="../images/role-num/m-g-pencil.png"></div>
@@ -55,15 +55,16 @@
         <p>幽灵词组：<input type="text" placeholder="限制十个字以内"></p>
     </div>
     <div class="m3">
-        <p>玩家人数<input type="number" min="4" max="18" value="8" id="writeNum" oninput="writeNum(this.value)" onchange="writeNum(this.value);monitorNum(this.value);" >人<span>（玩家数量4-18人）</span></p>
+        <p>玩家人数<input type="number" min="4" max="18" id="writeNum" oninput="writeNum(this.value)" onchange="writeNum(this.value);monitorNum(this.value);" >人<span>（玩家数量4-18人）</span></p>
         <div class="going">
             <button onclick="reduceNum()">-</button>
-            <input type="range" name="points" min="4" max="18" value="8" id="sliderNum" oninput="sliderNum(this.value)" onchange="sliderNum(this.value);" />
+            <input type="range" name="points" min="4" max="18"  id="sliderNum" oninput="sliderNum(this.value)" onchange="sliderNum(this.value);" />
             <button onclick="addNum()">+</button>
         </div>
     </div>
 </main>
 <footer>
+    <button type="button" onclick="getNumArray()" >查看发牌时打乱的数组</button>
     <button type="button" onclick="begin()" >去发牌</button>
 </footer>
 

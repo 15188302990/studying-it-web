@@ -86,14 +86,22 @@ function getNumArray(arr) {
     console.log(shuffle);
     return shuffle;
 }
+//开始发牌脚本
 function begin() {
     getNumArray();
     window.location.href = "Task2-check-role.html";
 }
+//返回脚本
 function backLink() {
     window.location.href = "Task2-page.html";
 }
 
+//初始默认人数脚本
+window.onload= onload();
+function onload() {
+    document.getElementById("sliderNum").value=8;
+    sliderNum(8);
+}
 
 
 
