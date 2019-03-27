@@ -1,14 +1,12 @@
-@bg-color-1:#29bde0;
-@bg-color-2:#55a8b3;
-@bg-color-3:#38a2ab;
-@bg-color-5:#d2f5fa;
-@text-color-1:#29bde0;
-@text-color-2:#fff;
-.flex-box-1 {
+@bg-color-body:#29bde0;
+@bg-color-label:#29bde0;
+@text-color-li:#29bde0;
+@text-color-label:#fff;
+.flex-box {
   display: flex;
   align-items: center;
   justify-content: space-between;}
-.test-style-1{
+.bg-fff {
   background-color: #fff;
 }
 
@@ -38,7 +36,7 @@ body {/*input和侧边栏aside，*/
       margin-right: -77%;/*主体移动*/
       background-color: #29bde1;
     }
-    &:checked ~ #wrap>.b-last-game {/*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
+    &:checked ~ #wrap>.last-game-box {/*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
       border: #21a8c8;
       border-radius: 10px;
       background-color: #21a8c8;
@@ -46,9 +44,9 @@ body {/*input和侧边栏aside，*/
         color: #fff;
       }
     }
-    &:checked ~ #wrap>.b-game-version {/*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
+    &:checked ~ #wrap>.game-version-box {/*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
       border-radius: 10px;
-      background: @bg-color-5;
+      background: #d2f5fa;
     }
   }
   aside { /*侧边栏。初始位置为-50%，即隐藏效果*/
@@ -62,13 +60,13 @@ body {/*input和侧边栏aside，*/
     ul {
       padding: 0;
         a {
-          .flex-box-1();
+          .flex-box();
           padding: .2rem;
           text-decoration: none;
           border-bottom: 1px solid #9c9c9c;
           li {
             margin-right: 50%;
-            color: @text-color-1;
+            color: @text-color-li;
             font-size: .3rem;
             list-style: none;
           }
@@ -84,32 +82,32 @@ body {
     transition: 0.2s ease-out;/*动画效果*/
     header {
       line-height: .8rem;
-      background-color: @bg-color-1;
+      background-color: @bg-color-body;
       label { /*控制侧边栏进出的按钮*/
         display: block;
         width: 1rem;
-        color: @text-color-2;
+        color: @text-color-label;
         font-family: Courier New;
         line-height: 1rem;
         text-align: center;
-        background: @bg-color-1;
+        background: @bg-color-label;
         cursor: pointer;/*光标为手*/
       }
     }
-    .b-last-game {
-      .flex-box-1();
+    .last-game-box {
+      .flex-box();
       height: 1.5rem;
       border: solid 1px #d0d0d0;
       margin: 0.2rem;
       color: #9a9a9a9a;
       font-size: .5rem;
-      .test-style-1();
+      .bg-fff();
     }
-    .b-game-version {
+    .game-version-box {
       border: solid 1px #d0d0d0;
       border-bottom: none;
       margin:0 .2rem;
-      .test-style-1();
+      .bg-fff();
       .p-game {
         border-bottom: solid 1px #fdd793;
         padding: .5rem 0;
@@ -117,7 +115,7 @@ body {
         color: #fbb435;
         font-size: .4rem;
       }
-      .gv {
+      .game-version {
         position: relative;/*为了图标以父gv容器*/
         display: block;
         border: none;

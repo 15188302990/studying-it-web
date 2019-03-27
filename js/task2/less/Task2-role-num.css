@@ -1,9 +1,9 @@
-.flex-style-1 {
+.flex-style-jc-sp {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.flex-style-2 {
+.flex-style-jc-c {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,14 +39,14 @@ header [type=button] {
 main {
   overflow: hidden;
 }
-main .m1 {
+main .role-grid {
   display: grid;
   position: relative;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
   padding: 15px 15px 0.25rem 15px;
 }
-main .m1 .item-h {
+main .role-grid .grid-title {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -54,31 +54,35 @@ main .m1 .item-h {
   border-right: solid #d9d9d9;
   background-color: #fff;
 }
-main .m1 .item-h p {
+main .role-grid .grid-title p {
   margin: 3rem 0;
   font-size: 1rem;
   color: #000;
   text-align: center;
 }
-main .m1 .item-b-1 {
+main .role-grid .grid-content-role {
   display: flex;
-  align-items: flex-start;
   grid-column-start: 3;
   grid-column-end: 11;
   grid-row-start: 1;
   grid-row-end: 6;
   background-color: #fbfbfb;
 }
-main .m1 .item-b-1 p {
-  display: inline-block;
-  width: 0;
+main .role-grid .grid-content-role .grid-role-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: #a1a1a1;
+}
+main .role-grid .grid-content-role .grid-role-box p {
   border: 0.15rem solid #FAB344;
   margin: 0 0.25rem 0 0;
 }
-main .m1 .item-b-1 span {
+main .role-grid .grid-content-role .grid-role-box span {
   font-size: 0.8rem;
 }
-main .m1 .item-b-2 {
+main .role-grid .grid-content-setting {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,17 +95,18 @@ main .m1 .item-b-2 {
   color: #29bde0;
   background-color: #fbfbfb;
 }
-main .m1 .item-b-2 img {
-  width: 0.5rem;
-  padding-top: 0.25rem;
+main .role-grid .grid-content-setting img {
+  width: 0.6rem;
+  padding-top: 0.2rem;
+  margin-left: 0.4rem;
 }
-main .m2 {
+main .phrase {
   padding: 0;
   margin: 0 15px;
   background-color: #fff;
   overflow: hidden;
 }
-main .m2 p {
+main .phrase p {
   height: 2.1875rem;
   padding: 0.46875rem;
   margin: 0.46875rem;
@@ -109,24 +114,24 @@ main .m2 p {
   font-size: 0.875rem;
   color: #a1a1a1;
 }
-main .m2 p input {
+main .phrase p input {
   border: none;
   font-size: 0.8rem;
 }
-main .m3 {
+main .role-num {
   padding: 0;
   margin: 0.25rem 15px;
   font-size: 0.875rem;
   background-color: #fff;
   overflow: hidden;
 }
-main .m3 p {
+main .role-num p {
   height: 2.1875rem;
   padding: 0.46875rem;
   margin: 0.46875rem;
   font-weight: bold;
 }
-main .m3 p input {
+main .role-num p input {
   width: 1.875rem;
   height: 1.3125rem;
   margin: 0 0.6rem;
@@ -134,24 +139,24 @@ main .m3 p input {
   color: #FAB344;
   text-align: center;
 }
-main .m3 p input::-webkit-inner-spin-button {
+main .role-num p input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-main .m3 p input[type="number"] {
+main .role-num p input[type="number"] {
   -moz-appearance: textfield;
 }
-main .m3 p span {
+main .role-num p span {
   color: #FAB344;
   font-size: 0.8rem;
   font-weight: normal;
 }
-main .m3 .going {
+main .role-num .slider-box {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 2.1875rem;
 }
-main .m3 .going button {
+main .role-num .slider-box button {
   width: 1.5rem;
   height: 1.5rem;
   padding: 0 ;
@@ -162,18 +167,18 @@ main .m3 .going button {
   background-color: #fff;
   outline: none;
 }
-main .m3 .going button:active {
+main .role-num .slider-box button:active {
   color: #fafafa;
 }
-main .m3 .going input {
+main .role-num .slider-box input {
   width: 60%;
 }
-main .m3 .going input[type="range"] {
+main .role-num .slider-box input[type="range"] {
   -webkit-appearance: none;
   height: 0.3rem;
   background-color: #ffa600;
 }
-main .m3 .going input[type="range"]::-webkit-slider-thumb {
+main .role-num .slider-box input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   cursor: default;
   /*top: -5px;*/
@@ -193,7 +198,6 @@ footer {
 footer button {
   width: 100%;
   height: 2.75rem;
-  margin: 1rem 0;
   outline: none;
   border: 1px solid #ffa500;
   font-size: 1.25rem;
@@ -203,13 +207,6 @@ footer button {
 footer button:hover {
   color: #ffa500;
   background-color: #fff;
-}
-.aaa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  color: #a1a1a1;
 }
 input {
   outline: none;

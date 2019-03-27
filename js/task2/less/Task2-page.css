@@ -1,9 +1,9 @@
-.flex-box-1 {
+.flex-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.test-style-1 {
+.bg-fff {
   background-color: #fff;
 }
 html {
@@ -45,16 +45,16 @@ body #sidemenu:checked ~ #wrap {
   /*主体移动*/
   background-color: #29bde1;
 }
-body #sidemenu:checked ~ #wrap > .b-last-game {
+body #sidemenu:checked ~ #wrap > .last-game-box {
   /*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
   border: #21a8c8;
   border-radius: 10px;
   background-color: #21a8c8;
 }
-body #sidemenu:checked ~ #wrap > .b-last-game p {
+body #sidemenu:checked ~ #wrap > .last-game-box p {
   color: #fff;
 }
-body #sidemenu:checked ~ #wrap > .b-game-version {
+body #sidemenu:checked ~ #wrap > .game-version-box {
   /*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
   border-radius: 10px;
   background: #d2f5fa;
@@ -113,7 +113,7 @@ body #wrap header label {
   cursor: pointer;
   /*光标为手*/
 }
-body #wrap .b-last-game {
+body #wrap .last-game-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,30 +124,30 @@ body #wrap .b-last-game {
   font-size: 0.5rem;
   background-color: #fff;
 }
-body #wrap .b-game-version {
+body #wrap .game-version-box {
   border: solid 1px #d0d0d0;
   border-bottom: none;
   margin: 0 0.2rem;
   background-color: #fff;
 }
-body #wrap .b-game-version .p-game {
+body #wrap .game-version-box .p-game {
   border-bottom: solid 1px #fdd793;
   padding: 0.5rem 0;
   margin: 0;
   color: #fbb435;
   font-size: 0.4rem;
 }
-body #wrap .b-game-version .gv {
+body #wrap .game-version-box .game-version {
   position: relative;
   /*为了图标以父gv容器*/
   display: block;
   border: none;
   font-size: 0.3rem;
 }
-body #wrap .b-game-version .gv a {
+body #wrap .game-version-box .game-version a {
   text-decoration: none;
 }
-body #wrap .b-game-version .gv .p-name {
+body #wrap .game-version-box .game-version .p-name {
   border-radius: 10px;
   margin: 0.2rem 0.8rem;
   color: #fff;
@@ -155,11 +155,11 @@ body #wrap .b-game-version .gv .p-name {
   /*可以保持高度，且居中*/
   background-color: #69d1e9;
 }
-body #wrap .b-game-version .gv .p-number {
+body #wrap .game-version-box .game-version .p-number {
   margin: 0;
   color: #787878;
 }
-body #wrap .b-game-version .i img {
+body #wrap .game-version-box .i img {
   position: absolute;
   top: 0.35rem;
   right: 0.2rem;

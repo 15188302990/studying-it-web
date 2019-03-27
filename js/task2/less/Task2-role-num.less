@@ -1,22 +1,23 @@
-@b-color-1:#d9d9d9;
-@text-color-h:#fff;
-@text-color-g-1:#000;
-@text-color-g-2:#a1a1a1;
-@text-color-g-3:#29bde0;
-@text-color-m-3:#FAB344;
-@bg-color-h:#29bde0;
-@bg-color-m:#f0f0f0;
-@bg-color-g-h:#fff;
-@bg-color-g-b:#fbfbfb;
-@bg-color-m-2:#fff;
+@border-color:#d9d9d9;
+@text-color-header:#fff;
+@text-color-grid-title:#000;
+@text-color-grid-role:#a1a1a1;
+@text-color-phrase:#a1a1a1;
+@text-color-grid-setting:#29bde0;
+//@text-color-m-3:#FAB344;
+@bg-color-header:#29bde0;
+@bg-color-body:#f0f0f0;
+@bg-color-grid-title:#fff;
+@bg-color-grid-body:#fbfbfb;
+@bg-color-phrase:#fff;
 
-.flex-style-1 {
+.flex-style-jc-sp {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.flex-style-2 {
+.flex-style-jc-c {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,12 +31,12 @@ html {
 
 }
 body{
-  background-color: @bg-color-m;
+  background-color: @bg-color-body;
 }
 header {
-  background-color: @bg-color-h;
+  background-color: @bg-color-header;
   .container {
-    .flex-style-1();
+    .flex-style-jc-sp();
     height: 1.91rem;
     img {
       height: 1.25rem;
@@ -43,7 +44,7 @@ header {
     }
     span{
       font-size: 1.1rem;
-      color: @text-color-h;
+      color: @text-color-header;
     }
   }
   [type=button] {
@@ -51,80 +52,87 @@ header {
   }
 }
 main {
-
   overflow: hidden;
-  .m1 {
+  .role-grid {
     display: grid;
     position: relative;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
     padding: 15px 15px .25rem 15px;
 
-    .item-h {
+    .grid-title {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 7;
-      border-right: solid @b-color-1;
-      background-color: @bg-color-g-h;
+      border-right: solid @border-color;
+      background-color: @bg-color-grid-title;
 
       p {
         margin: 3rem 0;
         font-size: 1rem;
-        color: @text-color-g-1;
+        color: @text-color-grid-title;
         text-align: center;
       }
     }
 
-    .item-b-1 {
+    .grid-content-role {
       display: flex;
-      align-items: flex-start;
+      //align-items: flex-start;
       //flex-wrap: wrap;
       grid-column-start: 3;
       grid-column-end: 11;
       grid-row-start: 1;
       grid-row-end: 6;
-      background-color: @bg-color-g-b;
-      p {
-        display: inline-block;
-        width: 0;
-        border: .15rem solid #FAB344;
-        margin: 0 .25rem 0 0;
-      }
-      span {
-        font-size: .8rem;
+      background-color: @bg-color-grid-body;
+
+      .grid-role-box {
+        .flex-style-jc-c();
+        width: 50%;
+        color: @text-color-grid-role;
+        p {
+          //display: inline-block;
+          //width: 0;
+          border: .15rem solid #FAB344;
+          margin: 0 .25rem 0 0;
+        }
+
+        span {
+          font-size: .8rem;
+        }
       }
     }
-    .item-b-2 {
-      .flex-style-2();
+    .grid-content-setting {
+      .flex-style-jc-c();
       grid-column-start: 3;
       grid-column-end: 11;
       grid-row-start: 6;
       grid-row-end: 7;
-      border-top: solid @b-color-1;
+      border-top: solid @border-color;
       font-size: .8rem;
-      color: @text-color-g-3;
-      background-color: @bg-color-g-b;
+      color: @text-color-grid-setting;
+      background-color: @bg-color-grid-body;
       img {
-        width: .5rem;
-        padding-top: .25rem;
+        width: .6rem;
+        padding-top: .2rem;
+        margin-left: 0.4rem;
       }
     }
 
   }
 
-  .m2 {
+  .phrase {
     padding: 0;
     margin: 0 15px;
-    background-color: @bg-color-m-2;
+    background-color: @bg-color-phrase;
     overflow:hidden;
     p {
       height: 2.1875rem;
       padding: .46875rem;
       margin: .46875rem;
-      border-bottom: .0625rem solid @b-color-1;
+      border-bottom: .0625rem solid @border-color;
       font-size: .875rem;
-      color: @text-color-g-2;
+      color: @text-color-phrase;
       input {
         border: none;
         font-size: .8rem;
@@ -133,11 +141,11 @@ main {
     }
   }
 
-  .m3{
+  .role-num {
     padding: 0;
     margin: .25rem 15px;
     font-size: .875rem;
-    background-color: @bg-color-m-2;
+    background-color: @bg-color-phrase;
     overflow:hidden;
     p{
       height: 2.1875rem;
@@ -165,7 +173,7 @@ main {
       }
     }
 //滑块
-    .going {
+    .slider-box {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -218,11 +226,11 @@ main {
 
 footer {
   padding: 0 15px;
-  background-color: @bg-color-m;
+  background-color: @bg-color-body;
   button {
     width: 100%;
     height: 2.75rem;
-    margin: 1rem 0;
+
     outline: none;
     border: 1px solid #ffa500;
 
@@ -237,12 +245,7 @@ footer {
     }
   }
 }
-.aaa {
-  .flex-style-2();
-  width: 50%;
-  color: @text-color-g-2;
 
-}
 input {
   outline:none;//去除点击的蓝色框
 }

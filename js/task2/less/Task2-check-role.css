@@ -1,12 +1,7 @@
-.flex-style-1 {
+.flex-style-jc-sp {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.flex-style-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 html {
   min-width: 320px;

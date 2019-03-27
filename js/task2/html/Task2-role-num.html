@@ -12,21 +12,6 @@
 
 </head>
 <body>
-<script type="text/javascript" >
-    /*网页字跟随页面自动变化*/
-    function setRem(){
-        /*获取当前页面的宽度*/
-        var width = document.body.offsetWidth;
-        /*设置页面的字体大小*/
-        var nowFont=width/320*16;
-        /*通过标签名称来获取元素*/
-        var htmlFont=document.getElementsByTagName('html')[0];
-        // 给获取到的元素的字体大小赋值
-        htmlFont.style.fontSize =nowFont+"px";
-    }
-    setRem();
-    window.onresize=setRem;  //监听屏幕变化
-</script>
 <header>
     <div class="container">
         <img type="button" onclick="backLink()" src="../images/role-num/h-icon-l.png">
@@ -35,36 +20,28 @@
     </div>
 </header>
 <main>
-    <div class="m1 ">
-        <div class="item-h"><p>玩<br>家<br>配<br>比</p></div>
-        <div class="item-b-1">
-            <div class="aaa"><p></p><span id="killerNum">杀&nbsp;&nbsp;&nbsp;&nbsp;手&nbsp;&nbsp;2&nbsp;&nbsp;人 </span></div>
-            <div class="aaa"><p></p><span id="civilianNum">平&nbsp;&nbsp;&nbsp;&nbsp;民&nbsp;&nbsp;6&nbsp;&nbsp;人 </span></div>
-
+    <div class="role-grid ">
+        <div class="grid-title"><p>玩<br>家<br>配<br>比</p></div>
+        <div class="grid-content-role">
+            <div class="grid-role-box"><p></p><span >杀&emsp;手&ensp;<span id="killerNum">2</span>&ensp;人 </span></div>
+            <div class="grid-role-box"><p></p><span >平&emsp;民&ensp;<span id="civilianNum">6</span>&ensp;人 </span></div>
         </div>
-        <div class="item-b-2">点击设置<img src="../images/role-num/m-g-pencil.png"></div>
-
-
-
-
+        <div class="grid-content-setting">点击设置<img src="../images/role-num/m-g-pencil.png"></div>
     </div>
-
-
-    <div class="m2 ">
-        <p>水民词组：<input type="text" placeholder="限制十个字以内"></p>
-        <p>幽灵词组：<input type="text" placeholder="限制十个字以内"></p>
+    <div class="phrase ">
+        <p>水民词组：<input type="text" onkeyup="value=value.replace(/[\d]/g,'') " maxlength="10" placeholder="限制十个字以内"></p>
+        <p>幽灵词组：<input type="text" onkeyup="value=value.replace(/[\d]/g,'') " maxlength="10" placeholder="限制十个字以内"></p>
     </div>
-    <div class="m3">
-        <p>玩家人数<input type="number" min="4" max="18" id="writeNum" oninput="writeNum(this.value)" onchange="writeNum(this.value);monitorNum(this.value);" >人<span>（玩家数量4-18人）</span></p>
-        <div class="going">
+    <div class="role-num">
+        <p>玩家人数<input type="number" min="4" max="18" id="writeNum"  oninput="writeNum(this.value)" onchange="writeNum(this.value);monitorNum(this.value);" >人<span>（玩家数量4-18人）</span></p>
+        <div class="slider-box">
             <button onclick="reduceNum()">-</button>
-            <input type="range" name="points" min="4" max="18"  id="sliderNum" oninput="sliderNum(this.value)" onchange="sliderNum(this.value);" />
+            <input type="range" name="points" min="4" max="18"  id="sliderNum" oninput="sliderNum(this.value)" onchange="sliderNum(this.value)" />
             <button onclick="addNum()">+</button>
         </div>
     </div>
 </main>
 <footer>
-    <button type="button" onclick="getNumArray()" >查看发牌时打乱的数组</button>
     <button type="button" onclick="begin()" >去发牌</button>
 </footer>
 
