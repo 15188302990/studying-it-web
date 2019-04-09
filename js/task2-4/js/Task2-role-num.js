@@ -58,7 +58,7 @@ function getNumArray() {
 //开始发牌
 function begin() {
     // getNumArray(); //开始打乱数组
-    if (civilianPhrase.value == '' && killerPhrase.value == '' ) {
+    if (civilianPhrase.value == '' || killerPhrase.value == '' ) {
         alert("请输入词组")
     }
     else {

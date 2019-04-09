@@ -29,8 +29,8 @@
     </div>
     <div class="phrase ">
         <!--(^\s*)|(\s*$)除去空格，[\d]/g除去数字-->
-        <p>平民词组：<input id="civilianPhrase" type="text" onkeyup="value=value.replace(/(^\s*)|(\s*$)|[\d]/g,'') " maxlength="10" placeholder="限制十个字以内"></p>
-        <p>杀手词组：<input id="killerPhrase" type="text" onkeyup="value=value.replace(/(^\s*)|(\s*$)|[\d]/g,'') " maxlength="10" placeholder="限制十个字以内"></p>
+        <p>平民词组：<input id="civilianPhrase" type="text" onkeyup="value=value.replace(/[\d]|(^\s*)|(\s*$)/g,'') " maxlength="10" placeholder="限制十个字以内"></p>
+        <p>杀手词组：<input id="killerPhrase" type="text" onkeyup="value=value.replace(/[\d]|(^\s*)|(\s*$)/g,'') " maxlength="10" placeholder="限制十个字以内"></p>
     </div>
     <div class="role-num">
         <p>玩家人数<input type="number" min="4" max="18" id="writeNum"  oninput="writeNum(this.value)" onchange="writeNum(this.value);monitorNum(this.value);" >人<span>（玩家数量4-18人）</span></p>

@@ -88,8 +88,7 @@ $(".voteButton").click(function () {
                     arr[q].day = playNow;//改变天数属性，以便于标记什么时刻杀死，即标记为杀手杀死
                     console.log(arr);
                     sessionStorage.setItem("playerArray", JSON.stringify(arr));//储存新数组;//将改变的数组的保存到浏览器。
-                    result();
-                    // window.location.href = "Task2-game-process.html";//跳转到游戏进程控制页面。
+                    result();//判断结果
                 }
             }
             else {//当再全民投票时运行
@@ -107,8 +106,6 @@ $(".voteButton").click(function () {
                 playNow = playDay + playProcess;// 生成新的时刻
                 console.log("此时游戏时刻为" + playNow);
                 sessionStorage.setItem("playNow", JSON.stringify(playNow));
-
-
                 result();
                 // window.location.href = "Task2-game-process.html";//跳转到游戏进程控制页面。
             }
@@ -152,7 +149,6 @@ function result() {
             alert("杀手胜利");
             location.href = "Task2-result.html";//跳转到游戏结果日志页面。
         default:
-
             location.href = "Task2-game-process.html";//跳转到游戏进程控制页面。
     }
 }

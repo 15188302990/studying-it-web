@@ -18,7 +18,7 @@ html {
 body {
   min-width: 320px;
   max-width: 720px;
-  margin: 0;
+  margin: 0 auto;
 }
 p {
   margin: 0;
@@ -98,8 +98,6 @@ footer a {
   color: #fff;
   text-align: center;
   text-decoration: none;
-}
-.footer_btn1 {
   background-color: #fbb435;
 }
 /*# sourceMappingURL=Task2-result.css.map */
