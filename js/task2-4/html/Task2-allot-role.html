@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../less/Task2-allot-role.css">
+    <title>查看角色</title>
+
+
+</head>
+<body>
+<script type="text/javascript" >
+    /*网页字跟随页面自动变化*/
+    function setRem(){
+        /*获取当前页面的宽度*/
+        var width = document.body.offsetWidth;
+        /*设置页面的字体大小*/
+        var nowFont=width/320*16;
+        /*通过标签名称来获取元素*/
+        var htmlFont=document.getElementsByTagName('html')[0];
+        // 给获取到的元素的字体大小赋值
+        htmlFont.style.fontSize =nowFont+"px";
+    }
+    setRem();
+    window.onresize=setRem;  //监听屏幕变化
+</script>
+
+<header>
+    <div class="container">
+        <img type="button" onclick="backLink()" src="../images/check-role/h-icon-l.png">
+        <span>查看角色</span>
+        <img type="button" onclick="endLink()" src="../images/check-role/h-icon-r.png">
+    </div>
+</header>
+<main>
+    <p id="role-num">1</p>
+    <div class="role-content">
+        <img id="role-img" src="../images/check-role/img-0.png" />
+        <p id="role-text"></p>
+    </div>
+</main>
+<footer>
+    <button id="checkButton" onclick="seeRole()">查看1号身份</button>
+</footer>
+
+
+
+
+
+<script src="../js/Task2-allot-role.js"></script>
+
+</body>
+</html>

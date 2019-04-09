@@ -1,0 +1,143 @@
+.position-top {
+  position: fixed;
+  top: 0;
+}
+.position-bottom {
+  position: fixed;
+  bottom: 0;
+}
+.h-and-f-style {
+  z-index: 1;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+  background-color: #29bde0;
+}
+.flex-style-jc-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-box-js-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  min-width: 320px;
+  max-width: 720px;
+  margin: auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+  background-color: #29bde0;
+}
+header .h-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #fff;
+}
+header .h-title img,
+header .h-title span {
+  width: 1rem;
+  margin: 0.6rem;
+}
+header .h-tips-vote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.625rem;
+  color: #464646;
+  font-size: 0.3rem;
+  background-color: #b9e9f5;
+}
+header .h-tips-vote p {
+  padding-left: 1rem;
+}
+header .h-tips-arrow {
+  width: 0;
+  margin-left: 1rem;
+  border-width: 0.4rem;
+  border-style: solid;
+  border-bottom: none;
+  border-color: #b9e9f5 transparent transparent transparent;
+}
+header .h-tips-click {
+  padding-left: 1rem;
+  color: #fff;
+  font-size: 0.2rem;
+  line-height: 0.8rem;
+  background-color: #29bde0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5.475rem;
+  padding-bottom: 9rem;
+  background-color: #29bde0;
+}
+main .player-box {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  margin: 1.2rem;
+  margin-bottom: 4rem;
+  border: 2px solid #fff;
+}
+main .player-box p {
+  margin: 0;
+  text-align: center;
+}
+main .player-box .role {
+  line-height: 3rem;
+  background: #f5c97b;
+}
+main .player-box .player-num {
+  line-height: 1rem;
+  background: #83b09a;
+}
+main .player-box img {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  width: 2rem;
+  height: 1rem;
+  padding: 0.5rem 0;
+  border: 2px solid #fff;
+  background: #fff;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+  background-color: #29bde0;
+}
+footer a {
+  width: 80%;
+  border: none;
+  margin: 0.4rem 0;
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fbb435;
+}
+/*# sourceMappingURL=Task2-judge-vote.css.map */

@@ -1,0 +1,130 @@
+.position-top {
+  position: fixed;
+  top: 0;
+}
+.position-bottom {
+  position: fixed;
+  bottom: 0;
+}
+.h-and-f-style {
+  z-index: 1;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+  background-color: #29bde0;
+}
+.flex-style-jc-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-box-js-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+body{
+  min-width: 320px;
+  max-width: 720px;
+  margin: auto;
+}
+header {
+  .position-top ();
+  .h-and-f-style();
+  .h-title {
+    .flex-style-jc-sb();
+    font-size: .8rem;
+    color: #fff;
+    img,span {
+      width: 1rem;
+      margin: .6rem;
+    }
+  }
+  .h-tips-vote {
+    .flex-style-jc-sb;
+    height: 1.625rem;
+    color: #464646;
+    font-size: .3rem;
+    background-color: #b9e9f5;
+    p {
+      padding-left: 1rem;
+    }
+  }
+  .h-tips-arrow{
+    width: 0;
+    margin-left: 1rem;
+    border-width: .4rem;
+    border-style: solid;
+    border-bottom: none;
+    border-color: #b9e9f5 transparent transparent transparent;
+  }
+  .h-tips-click {
+    padding-left: 1rem;
+    color: #fff;
+    font-size: .2rem;
+    line-height: .8rem;
+    background-color: #29bde0;
+  }
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-around;
+  margin-top: 5.475rem;//扩充顶部与header高一致
+  padding-bottom: 9rem;//扩充底部，为了不遮盖角色盒子内容
+  //min-height: 100vh;
+  background-color: #29bde0;
+  .player-box {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin: 1.2rem;
+    margin-bottom: 4rem;
+    border: 2px solid #fff;
+    p{
+      margin: 0;
+      text-align: center;
+    }
+    .role {
+      line-height: 3rem;
+      background: #f5c97b;
+    }
+    .player-num {
+      line-height: 1rem;
+      background: #83b09a;
+    }
+    img {
+      display: none;
+      position: absolute;
+      top: 5rem;
+      left: 1rem;
+      width: 2rem;
+      height: 1rem;
+      padding: .5rem 0;
+      border: 2px solid #fff;
+      background: #fff;
+    }
+  }
+}
+
+footer {
+  .flex-box-js-c();
+  .position-bottom ();
+  .h-and-f-style();
+  a {
+    width: 80%;
+    border: none;
+    margin: .4rem 0;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fbb435;
+  }
+}

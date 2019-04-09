@@ -1,0 +1,83 @@
+.position-top {
+  position: fixed;
+  top: 0;
+}
+.position-bottom {
+  position: fixed;
+  bottom: 0;
+}
+.h-and-f-style {
+  min-width: 320px;
+  max-width: 780px;
+  width: 100%;
+  height: 2.5rem;
+  margin: auto;
+  background-color: #29bde0;
+}
+.flex-style-jc-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-box-js-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;
+}
+header {
+  .position-top ();
+  .h-and-f-style();
+  font-size: .8rem;
+  color: #fff;
+  text-align: center;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-around;
+  margin-top: 2.5rem;//扩充顶部与header高一致
+  padding-bottom: 12rem;//扩充底部，为了不遮盖角色盒子内容
+  //min-height: 100vh;
+  background-color: #29bde0;
+  .player-box {
+    width: 4rem;
+    height: 4rem;
+    margin: 1.2rem;
+    border: 0.13rem solid #fff;
+    p{
+      margin: 0;
+      text-align: center;
+    }
+    .role {
+      line-height: 3rem;
+      background: #f5c97b;
+    }
+    .player-num {
+      line-height: 1rem;
+      background: #83b09a;
+    }
+  }
+}
+footer {
+  .flex-box-js-c();
+  .position-bottom ();
+  .h-and-f-style();
+  a {
+    width: 80%;
+    border: none;
+    margin: .4rem 0;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fbb435;
+  }
+}

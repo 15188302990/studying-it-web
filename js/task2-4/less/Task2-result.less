@@ -1,0 +1,109 @@
+.position-style {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.h-and-f-style {
+  min-width: 320px;
+  max-width: 720px;
+}
+.flex-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+html{
+  font-size: 50px;
+}
+body{
+  .h-and-f-style();
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+header {
+  .flex-style-1();
+  .h-and-f-style();
+  width: 18rem;
+  padding: 0 1rem;
+  height: 3.125rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #29bde0;
+  img {
+    width: 1.5rem;/*改写图片大小*/
+    height:1.5rem;
+  }
+}
+main {
+  min-height: 580px;
+  padding: 0 1rem;
+  background-color: #29bde0;
+
+  .gameDetails {
+    padding: 0 1.5rem;
+    background-color: #29bde0;
+
+    img {
+      width: 10rem;
+      padding: 0 2rem;
+    }
+
+    p {
+      font-size: .9rem;
+      color: #fff;
+      margin: .2rem 0;
+    }
+
+    .surplus-player {
+      display: flex;
+
+      p {
+        width: 50%;
+      }
+    }
+  }
+
+  .gameProcess {
+    background-color: #fff;
+
+    .process {
+      padding: 0 1.5rem;
+      border-bottom: solid 1px #ddd;
+      p {
+        margin: .1rem 0;
+        font-size: 0.28rem;
+        color: #a6a6a6;
+      }
+    }
+  }
+}
+
+.m3 {
+  height: 20vh;
+}
+footer{
+  position:fixed;
+  bottom: 0;
+  min-width: 320px;
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+  background:#99dff0;
+  a {
+    display: block;
+    line-height: 2rem;
+    border-radius: 5px;
+    margin: .5rem;
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.footer_btn1 {
+  background-color: #fbb435;
+}

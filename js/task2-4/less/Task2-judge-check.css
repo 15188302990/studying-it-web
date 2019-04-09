@@ -1,0 +1,100 @@
+.position-top {
+  position: fixed;
+  top: 0;
+}
+.position-bottom {
+  position: fixed;
+  bottom: 0;
+}
+.h-and-f-style {
+  min-width: 320px;
+  max-width: 780px;
+  width: 100%;
+  height: 2.5rem;
+  margin: auto;
+  background-color: #29bde0;
+}
+.flex-style-jc-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-box-js-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  max-width: 780px;
+  width: 100%;
+  height: 2.5rem;
+  margin: auto;
+  background-color: #29bde0;
+  font-size: 0.8rem;
+  color: #fff;
+}
+header img {
+  width: 1rem;
+  margin: 0.6rem;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  padding-bottom: 18rem;
+  background-color: #29bde0;
+}
+main .player-box {
+  width: 4rem;
+  height: 4rem;
+  margin: 1.2rem;
+  border: 0.13rem solid #fff;
+}
+main .player-box p {
+  margin: 0;
+  text-align: center;
+}
+main .player-box .role {
+  line-height: 3rem;
+  background: #f5c97b;
+}
+main .player-box .player-num {
+  line-height: 1rem;
+  background: #83b09a;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  min-width: 320px;
+  max-width: 780px;
+  width: 100%;
+  height: 2.5rem;
+  margin: auto;
+  background-color: #29bde0;
+}
+footer a {
+  width: 80%;
+  border: none;
+  margin: 0.4rem 0;
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fbb435;
+}
+/*# sourceMappingURL=Task2-judge-check.css.map */

@@ -1,0 +1,173 @@
+@bg-color-body:#29bde0;
+@bg-color-label:#29bde0;
+@text-color-li:#29bde0;
+@text-color-label:#fff;
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;}
+.bg-fff {
+  background-color: #fff;
+}
+
+html {
+  font-size: 50px;
+  overflow: hidden;
+}
+body {
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;/*居中*/
+  background-color: #f0f0f0;
+  overflow: hidden;/*主体移动，但超出部分隐藏，就不会出现横向滚动条*/
+  position: relative;
+}
+
+body {/*input和侧边栏aside，*/
+  #sidemenu{/*sidemenu第一他代表了input的名字；第二是作为input和label的连接器；*/
+    display: none;/*使input隐藏*//*隐藏checked复选框*/
+    &:checked + aside {/*为被选中的sidemenu后的aside设置属性（紧邻）*/
+
+      left: 0;/*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
+    }
+    &:checked ~ #wrap {/*为被选中的sidemenu后的wrap设置属性（非紧邻）*//*wrap是主体内容*/
+      height: 100vh;/*主体包裹底部（整个页面）*/
+      padding-left: 77%;/*主体移动*/
+      margin-right: -77%;/*主体移动*/
+      background-color: #29bde1;
+    }
+    &:checked ~ #wrap>.last-game-box {/*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
+      border: #21a8c8;
+      border-radius: 10px;
+      background-color: #21a8c8;
+      p {
+        color: #fff;
+      }
+    }
+    &:checked ~ #wrap>.game-version-box {/*为被选中的sidemenu后的wrap的子元素设置属性（非紧邻）*/
+      border-radius: 10px;
+      background: #d2f5fa;
+    }
+  }
+  aside { /*侧边栏。初始位置为-50%，即隐藏效果*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -77%; /*使侧边栏跟随屏幕变化而隐藏*/
+    width: 77%; /*侧边栏的宽度和wrap的左padding，右margin负相同，使wrap整体移动*/
+    background: #fff;
+    transition: 0.2s ease-out; /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+    ul {
+      padding: 0;
+        a {
+          .flex-box();
+          padding: .2rem;
+          text-decoration: none;
+          border-bottom: 1px solid #9c9c9c;
+          li {
+            margin-right: 50%;
+            color: @text-color-li;
+            font-size: .3rem;
+            list-style: none;
+          }
+          .icon {
+            width: 16px;
+          }
+      }
+    }
+  }
+}
+body {
+  #wrap {/*主体*/
+    transition: 0.2s ease-out;/*动画效果*/
+    header {
+      line-height: .8rem;
+      background-color: @bg-color-body;
+      label { /*控制侧边栏进出的按钮*/
+        display: block;
+        width: 1rem;
+        color: @text-color-label;
+        font-family: Courier New;
+        line-height: 1rem;
+        text-align: center;
+        background: @bg-color-label;
+        cursor: pointer;/*光标为手*/
+      }
+    }
+    .last-game-box {
+      .flex-box();
+      height: 1.5rem;
+      border: solid 1px #d0d0d0;
+      margin: 0.2rem;
+      color: #9a9a9a9a;
+      font-size: .5rem;
+      .bg-fff();
+    }
+    .game-version-box {
+      border: solid 1px #d0d0d0;
+      border-bottom: none;
+      margin:0 .2rem;
+      .bg-fff();
+      .p-game {
+        border-bottom: solid 1px #fdd793;
+        padding: .5rem 0;
+        margin: 0;
+        color: #fbb435;
+        font-size: .4rem;
+      }
+      .game-version {
+        position: relative;/*为了图标以父gv容器*/
+        display: block;
+        border: none;
+        font-size: .3rem;
+        a {
+          text-decoration: none;
+        }
+        .p-name {
+          border-radius: 10px;
+          margin: .2rem .8rem;
+          color: #fff;
+          line-height: 1.5rem;/*可以保持高度，且居中*/
+          background-color: #69d1e9;
+        }
+        .p-number {
+          margin: 0;
+          color:#787878;
+        }
+
+      }
+      .i {
+        img {
+          position: absolute;
+          top: .35rem;
+          right: .2rem;
+          width: .4rem;
+        }
+      }
+    }
+  }
+}
+p {
+  text-align: center;
+}
+.circular {
+  display: flex;
+  justify-content: center;
+  padding: .8rem 0;
+  text-align: center;
+}
+span {
+  display: block;
+  float: left;
+  width: .2rem;
+  height: .2rem;
+  margin: .1rem;
+  border-radius: .2rem;
+  background-color: #f0f0f0;
+  &:hover {
+    background-color: #69d1e9;
+  }
+}
+
+
+
