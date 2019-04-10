@@ -8,7 +8,7 @@
 }
 .h-and-f-style {
   min-width: 320px;
-  max-width: 780px;
+  max-width: 440px;
   width: 100%;
   height: 2.5rem;
   margin: auto;
@@ -25,9 +25,13 @@
   justify-content: center;
 }
 
+html {
+  min-height: 100vh;
+  background-color: #29bde0;
+}
 body{
   min-width: 320px;
-  max-width: 780px;
+  max-width: 440px;
   margin: auto;
 }
 header {
@@ -43,16 +47,16 @@ main{
   flex-wrap: wrap;
   //justify-content: space-around;
   margin-top: 2.5rem;//扩充顶部与header高一致
-  padding-bottom: 12rem;//扩充底部，为了不遮盖角色盒子内容
   //min-height: 100vh;
   background-color: #29bde0;
   .player-box {
-    width: 4rem;
+    width: 20%;
     height: 4rem;
-    margin: 1.2rem;
-    border: 0.13rem solid #fff;
+    margin: 6%;
+    border: 2px solid #fff;
     p{
       margin: 0;
+      font-size:  .8rem;
       text-align: center;
     }
     .role {

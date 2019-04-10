@@ -9,7 +9,7 @@
 .h-and-f-style {
   z-index: 1;
   min-width: 320px;
-  max-width: 720px;
+  max-width: 440px;
   width: 100%;
   margin: auto;
   background-color: #29bde0;
@@ -24,9 +24,13 @@
   align-items: center;
   justify-content: center;
 }
+html {
+  min-height: 100vh;
+  background-color: #29bde0;
+}
 body {
   min-width: 320px;
-  max-width: 720px;
+  max-width: 440px;
   margin: auto;
 }
 header {
@@ -34,7 +38,7 @@ header {
   top: 0;
   z-index: 1;
   min-width: 320px;
-  max-width: 720px;
+  max-width: 440px;
   width: 100%;
   margin: auto;
   background-color: #29bde0;
@@ -81,20 +85,20 @@ header .h-tips-click {
 main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5.475rem;
-  padding-bottom: 9rem;
+  margin-top: 5.4rem;
   background-color: #29bde0;
 }
 main .player-box {
   position: relative;
-  width: 4rem;
+  width: 20%;
   height: 4rem;
-  margin: 1.2rem;
-  margin-bottom: 4rem;
+  margin: 6%;
+  margin-bottom: 2rem;
   border: 2px solid #fff;
 }
 main .player-box p {
   margin: 0;
+  font-size: 0.8rem;
   text-align: center;
 }
 main .player-box .role {
@@ -109,10 +113,10 @@ main .player-box img {
   display: none;
   position: absolute;
   top: 5rem;
-  left: 1rem;
-  width: 2rem;
-  height: 1rem;
-  padding: 0.5rem 0;
+  left: 1.4rem;
+  width: 1rem;
+  height: 0.5rem;
+  padding: 0.25rem 0;
   border: 2px solid #fff;
   background: #fff;
 }
@@ -124,7 +128,7 @@ footer {
   bottom: 0;
   z-index: 1;
   min-width: 320px;
-  max-width: 720px;
+  max-width: 440px;
   width: 100%;
   margin: auto;
   background-color: #29bde0;

@@ -9,6 +9,7 @@ var playNow = JSON.parse(sessionStorage.getItem("playNow"));
 console.log("此时游戏时刻为"+playNow);
 
 
+//font-size的控制
 function setRem(){
     var width = document.body.offsetWidth; //获取当前页面的宽度
     var nowFont=width/320*16; //设置页面的字体大小

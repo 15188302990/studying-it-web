@@ -1,3 +1,19 @@
+//font-size的控制
+function setRem(){
+    var width = document.body.offsetWidth; //获取当前页面的宽度
+    if(width>440){
+        width=440;
+    }
+    var nowFont=width/320*16; //设置页面的字体大小
+    var htmlFont=document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
+    htmlFont.style.fontSize =nowFont+"px"; // 给获取到的元素的字体大小赋值
+}
+setRem(); //运行脚本setRem
+window.onresize=setRem;  //监听屏幕变化
+
+
+
+
 //总人数输入脚本
 function sliderNum(sliderValue) {//滑块移动发生的脚本
     document.getElementById("writeNum").value= sliderValue ;//滑块总人数与键盘输入总人数数值同步
@@ -77,15 +93,7 @@ function onload() {
     document.getElementById("sliderNum").value=8;
     sliderNum(8);
 }
-//网页字体跟随页面自动变化
-function setRem(){
-    var width = document.body.offsetWidth; //获取当前页面的宽度
-    var nowFont=width/320*16; //设置页面的字体大小
-    var htmlFont=document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
-    htmlFont.style.fontSize =nowFont+"px"; // 给获取到的元素的字体大小赋值
-}
-setRem(); //运行脚本setRem
-window.onresize=setRem;  //监听屏幕变化
+
 
 
 

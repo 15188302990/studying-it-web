@@ -3,13 +3,6 @@
 ::before {
   box-sizing: border-box;
 }
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .flex-style-jc-sp {
   display: flex;
   align-items: center;
@@ -31,19 +24,18 @@ body {
   background-color: #f0f0f0;
 }
 header {
-  background-color: #29bde0;
-}
-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 1.91rem;
+  height: 2.75rem;
+  padding: 0 0.5625rem;
+  background-color: #29bde0;
 }
-header .container img {
-  height: 1.25rem;
+header img {
+  height: 1.4rem;
 }
-header .container span {
-  font-size: 1.1rem;
+header span {
+  font-size: 1.0625rem;
   color: #fff;
 }
 header [type=button] {
@@ -56,8 +48,8 @@ main .role-grid {
   display: grid;
   position: relative;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
-  padding: 15px 15px 0.25rem 15px;
+  grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 1.8rem;
+  padding: 0.625rem 0.5625rem 0.3125rem 0.5625rem;
 }
 main .role-grid .grid-title {
   grid-column-start: 1;
@@ -68,7 +60,7 @@ main .role-grid .grid-title {
   background-color: #fff;
 }
 main .role-grid .grid-title p {
-  margin: 3rem 0;
+  margin: 4.55rem 0;
   font-size: 1rem;
   color: #000;
   text-align: center;
@@ -115,61 +107,68 @@ main .role-grid .grid-content-setting img {
 }
 main .phrase {
   padding: 0;
-  margin: 0 15px;
+  margin: 0 0.5625rem;
   background-color: #fff;
   overflow: hidden;
 }
 main .phrase p {
-  height: 2.1875rem;
-  padding: 0.46875rem;
-  margin: 0.46875rem;
-  border-bottom: 0.0625rem solid #d9d9d9;
+  height: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.9rem;
+  border-bottom: 1px solid #d9d9d9;
   font-size: 0.875rem;
   color: #a1a1a1;
 }
-main .phrase p input {
+main .phrase .phrase-civilian {
+  margin: 0 1rem;
+}
+main .phrase .phrase-killer {
+  margin: 0 1rem 0.7rem 1rem;
+}
+main .phrase input {
   border: none;
   font-size: 0.8rem;
 }
-main .role-num {
-  padding: 0;
-  margin: 0.25rem 15px;
-  font-size: 0.875rem;
+.role-num {
+  height: 5.9rem;
+  margin: 0.25rem 0.5625rem;
+  font-size: 0.9rem;
   background-color: #fff;
   overflow: hidden;
 }
-main .role-num p {
-  height: 2.1875rem;
-  padding: 0.46875rem;
-  margin: 0.46875rem;
+.role-num p {
+  padding: 0.625rem 1rem;
+  margin: 0;
   font-weight: bold;
 }
-main .role-num p input {
-  width: 1.875rem;
-  height: 1.3125rem;
+.role-num p input {
+  width: 2rem;
+  border: none;
   margin: 0 0.6rem;
   font-size: 1rem;
   color: #FAB344;
-  text-align: center;
+  text-align: -webkit-center;
+  background-color: #edeeee;
 }
-main .role-num p input::-webkit-inner-spin-button {
+.role-num p input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-main .role-num p input[type="number"] {
+.role-num p input[type="number"] {
   -moz-appearance: textfield;
 }
-main .role-num p span {
+.role-num p span {
   color: #FAB344;
   font-size: 0.8rem;
   font-weight: normal;
 }
-main .role-num .slider-box {
+.role-num .slider-box {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 2.1875rem;
 }
-main .role-num .slider-box button {
+.role-num .slider-box button {
   width: 1.5rem;
   height: 1.5rem;
   padding: 0 ;
@@ -180,18 +179,18 @@ main .role-num .slider-box button {
   background-color: #fff;
   outline: none;
 }
-main .role-num .slider-box button:active {
+.role-num .slider-box button:active {
   color: #fafafa;
 }
-main .role-num .slider-box input {
+.role-num .slider-box input {
   width: 60%;
 }
-main .role-num .slider-box input[type="range"] {
+.role-num .slider-box input[type="range"] {
   -webkit-appearance: none;
   height: 0.3rem;
   background-color: #ffa600;
 }
-main .role-num .slider-box input[type="range"]::-webkit-slider-thumb {
+.role-num .slider-box input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   cursor: default;
   /*top: -5px;*/
@@ -205,7 +204,7 @@ main .role-num .slider-box input[type="range"]::-webkit-slider-thumb {
   border-radius: 0.5rem;
 }
 footer {
-  padding: 0 15px;
+  padding: 0.5625rem;
   background-color: #f0f0f0;
 }
 footer button {
@@ -223,20 +222,5 @@ footer button:hover {
 }
 input {
   outline: none;
-}
-@media (min-width: 576px) {
-  .container {
-    max-width: none;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: none;
-  }
-}
-@media (max-width: 3220px) {
-  body {
-    height: 100vh;
-  }
 }
 /*# sourceMappingURL=Task2-role-num.css.map */

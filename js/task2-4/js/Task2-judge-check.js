@@ -1,4 +1,13 @@
+//font-size的控制
+function setRem(){
+    var width = document.body.offsetWidth; //获取当前页面的宽度
 
+    var nowFont=width/320*16; //设置页面的字体大小
+    var htmlFont=document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
+    htmlFont.style.fontSize =nowFont+"px"; // 给获取到的元素的字体大小赋值
+}
+setRem(); //运行脚本setRem
+window.onresize=setRem;  //监听屏幕变化
 
 //提取储存的数组（字符串）
 let arr  = JSON.parse(sessionStorage.getItem("shuffleArr"));
@@ -32,14 +41,6 @@ for (var n = 0;n < arr.length;n++) {
 `);
 }
 
-function setRem(){
-    var width = document.body.offsetWidth; //获取当前页面的宽度
-    var nowFont=width/320*16; //设置页面的字体大小
-    var htmlFont=document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
-    htmlFont.style.fontSize =nowFont+"px"; // 给获取到的元素的字体大小赋值
-}
-setRem(); //运行脚本setRem
-window.onresize=setRem;  //监听屏幕变化
 
 //将数组里的字符串变成对象
 var  playerArray= []; //建立一个新数组 ，数组用[]，对象用{}

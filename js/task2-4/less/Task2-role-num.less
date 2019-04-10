@@ -17,13 +17,7 @@
 *, ::after, ::before {
   box-sizing: border-box;
 }
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 
 
 .flex-style-jc-sp {
@@ -50,42 +44,39 @@ body{
   background-color: @bg-color-body;
 }
 header {
+  .flex-style-jc-sp();
+  height: 2.75rem;
+  padding: 0 0.5625rem;
   background-color: @bg-color-header;
-  .container {
-    .flex-style-jc-sp();
-    height: 1.91rem;
-    img {
-      height: 1.25rem;
-
+  img {
+    height: 1.4rem;
     }
-    span{
-      font-size: 1.1rem;
-      color: @text-color-header;
-    }
+  span{
+    font-size: 1.0625rem;
+    color: #fff;
   }
   [type=button] {
     -webkit-appearance: none;
   }
 }
+
 main {
   overflow: hidden;
   .role-grid {
     display: grid;
     position: relative;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
-    padding: 15px 15px .25rem 15px;
-
+    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 1.8rem;
+    padding: 0.625rem 0.5625rem 0.3125rem 0.5625rem;
     .grid-title {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 7;
-      border-right: solid @border-color;
+      border-right:  solid #d9d9d9;
       background-color: @bg-color-grid-title;
-
       p {
-        margin: 3rem 0;
+        margin: 4.55rem 0;
         font-size: 1rem;
         color: @text-color-grid-title;
         text-align: center;
@@ -124,7 +115,7 @@ main {
       grid-column-end: 11;
       grid-row-start: 6;
       grid-row-end: 7;
-      border-top: solid @border-color;
+      border-top:  solid #d9d9d9;
       font-size: .8rem;
       color: @text-color-grid-setting;
       background-color: @bg-color-grid-body;
@@ -139,16 +130,26 @@ main {
 
   .phrase {
     padding: 0;
-    margin: 0 15px;
+    margin: 0 0.5625rem;
     background-color: @bg-color-phrase;
     overflow:hidden;
     p {
-      height: 2.1875rem;
-      padding: .46875rem;
-      margin: .46875rem;
-      border-bottom: .0625rem solid @border-color;
-      font-size: .875rem;
-      color: @text-color-phrase;
+      height: 2.5rem;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0.9rem;
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 0.875rem;
+      color: #a1a1a1;
+    }
+    .phrase-civilian {
+      margin: 0 1rem;
+    }
+
+    .phrase-killer {
+      margin: 0 1rem 0.7rem 1rem;
+    }
+
       input {
         border: none;
         font-size: .8rem;
@@ -158,23 +159,23 @@ main {
   }
 
   .role-num {
-    padding: 0;
-    margin: .25rem 15px;
-    font-size: .875rem;
+    height: 5.9rem;
+    margin: 0.25rem 0.5625rem;
+    font-size: 0.9rem;
     background-color: @bg-color-phrase;
     overflow:hidden;
     p{
-      height: 2.1875rem;
-      padding: .46875rem;
-      margin: .46875rem;
+      padding: 0.625rem 1rem;
+      margin: 0;
       font-weight: bold;
       input {
-        width: 1.875rem;
-        height: 1.3125rem;
+        width: 2rem;
+        border: none;
         margin: 0 .6rem;
         font-size: 1rem;
         color: #FAB344;
-        text-align: center;
+        text-align: -webkit-center;
+        background-color: #edeeee;
       }
       input::-webkit-inner-spin-button {
         -webkit-appearance: none;
@@ -231,33 +232,25 @@ main {
         background-size: 60% 60%;
         background-color:  #fff;
         border-radius: .5rem;
-
       }
-
-
     }
-
   }
-}
+
 
 footer {
-  padding: 0 15px;
+  padding: 0.5625rem;
   background-color: @bg-color-body;
   button {
     width: 100%;
     height: 2.75rem;
-
     outline: none;
     border: 1px solid #ffa500;
-
     font-size: 1.25rem;
     color: #fff;
     background: #ffa600;
-
     &:hover{
       color: #ffa500;
       background-color: #fff;
-
     }
   }
 }
@@ -266,27 +259,3 @@ input {
   outline:none;//去除点击的蓝色框
 }
 
-
-
-
-
-//
-//@media (max-width: 768px) {
-//.container {
-//  max-width: 720px!important;
-//}
-//}
-@media (min-width: 576px) {
-.container {
-  max-width: none;
-}
-}
-@media (min-width: 768px) {
-.container {
-  max-width: none;
-}}
-@media (max-width: 3220px) {
-  body {
-    height: 100vh;
-  }
-}

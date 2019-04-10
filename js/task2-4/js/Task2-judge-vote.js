@@ -55,16 +55,14 @@ function getTips() {
 getTips();//加载完就运行此功能
 
 //加载完，就对死亡玩家变色
-$(".dead").css("opacity", "0.5");//使选中的盒子变色。0对应了${arr[n].live},即死了的玩家
+$(".dead").css("opacity", "0.5");//使选中的盒子变色。dead对应了${arr[n].live},即死了的玩家
 
 
 
 //点击盒子变色，使用jqurey实现(但是如何用原生实现jq的遍历效果，还不懂)
-$('.survival').click(function () {//1对应了${arr[n].live},即或者的玩家
-    $(this).css("opacity", "0.5");//使选中的盒子变色
+$('.player-box').click(function () {//survival对应了${arr[n].live},即或者的玩家
     $(this).children("img").css("display", "block");//使选中的盒子的“小刀”图片出现
-    $(this).siblings(".survival").css("opacity", "1");//使其他的盒子颜色恢复正常
-    $(this).siblings(".survival").children("img").css("display", "none");//使其他的盒子的图片恢复正常
+    $(this).siblings("").children("img").css("display", "none");//使其他的盒子的图片恢复正常
     chooseBox=this;
     return chooseBox;
 });

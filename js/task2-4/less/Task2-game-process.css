@@ -36,7 +36,6 @@ main {
   border: 1px solid #f7f7f7;
 }
 main .grid-row {
-  width: 18.75rem;
   height: 3.125rem;
   display: flex;
   align-items: center;
@@ -74,20 +73,19 @@ main .time-icon p {
 main .time-icon img {
   width: 0.9rem;
   height: 0.9rem;
-  min-height: 16.2px;
   border: 1px solid #c9c9c9;
   border-radius: 50%;
   padding: 0.3rem;
 }
 main .arrow {
   width: 0.625rem;
-  margin: 1.25rem 0 1.25rem -1.4rem;
+  margin: 1.25rem 0 1.25rem -1rem;
   border-width: 0.3125rem 0.625rem;
   border-style: solid;
   border-color: transparent #24A7C6 transparent transparent;
 }
 main .acting {
-  width: 12.5rem;
+  width: 100%;
   margin: 0.3125rem 3.125rem 0.3125rem 0;
   color: #fff;
   font-size: 0.9rem;
@@ -96,7 +94,7 @@ main .acting {
   background-color: #24A7C6;
 }
 main .deader-tip {
-  width: 12.5rem;
+  width: 100%;
   margin: 0.3125rem 3.125rem 0.3125rem 0.625rem;
   color: #000;
   font-size: 0.5rem;

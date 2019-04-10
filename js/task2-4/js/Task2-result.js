@@ -18,6 +18,9 @@ var killerPhrase = JSON.parse(sessionStorage.getItem("killerPhrase"));
 //font-size的控制
 function setRem(){
     var width = document.body.offsetWidth; //获取当前页面的宽度
+    if(width>440){
+        width=440;
+    }
     var nowFont=width/320*16; //设置页面的字体大小
     var htmlFont=document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
     htmlFont.style.fontSize =nowFont+"px"; // 给获取到的元素的字体大小赋值
