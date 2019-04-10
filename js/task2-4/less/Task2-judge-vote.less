@@ -26,8 +26,8 @@
 }
 
 html {
-  min-height: 100vh;
-  background-color: #29bde0;
+
+  background-color: #fff;
 }
 
 
@@ -35,6 +35,8 @@ body{
   min-width: 320px;
   max-width: 440px;
   margin: auto;
+  min-height: 100vh;
+  background-color: #29bde0;
 }
 header {
   .position-top ();
@@ -46,6 +48,11 @@ header {
     img,span {
       width: 1rem;
       margin: .6rem;
+    }
+    img {
+      &:hover {
+        cursor:pointer;
+      }
     }
   }
   .h-tips-vote {
@@ -89,6 +96,7 @@ main{
     margin: 6%;
     margin-bottom: 2rem;
     border: 2px solid #fff;
+
     p{
       margin: 0;
       font-size: .8rem;
@@ -112,6 +120,16 @@ main{
       padding: .25rem 0;
       border: 2px solid #fff;
       background: #fff;
+    }
+  }
+  .dead {
+    &:hover {
+      cursor:not-allowed;
+    }
+  }
+  .survival{
+    &:hover {
+      cursor:pointer;
     }
   }
 }

@@ -13,13 +13,17 @@ window.onresize=setRem;  //监听屏幕变化
 let arr  = JSON.parse(sessionStorage.getItem("shuffleArr"));
 console.log(arr);
 
+//
+// function backLink() {
+//     var a=confirm("是否重新进行查看身份");
+//     if (a===true){
+//         window.location='Task2-allot-role.html';
+//         localStorage.removeItem('key');
+//         sessionStorage.clear();
+//     }
+// }
 function backLink() {
-    var a=confirm("是否重新进行查看身份");
-    if (a===true){
-        window.location='Task2-allot-role.html';
-        localStorage.removeItem('key');
-        sessionStorage.clear();
-    }
+    window.location='Task2-allot-role.html';
 }
 function endLink() {
     var a=confirm("是否结束本轮游戏");

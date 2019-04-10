@@ -25,13 +25,14 @@
   justify-content: center;
 }
 html {
-  min-height: 100vh;
-  background-color: #29bde0;
+  background-color: #fff;
 }
 body {
   min-width: 320px;
   max-width: 440px;
   margin: auto;
+  min-height: 100vh;
+  background-color: #29bde0;
 }
 header {
   position: fixed;
@@ -54,6 +55,9 @@ header .h-title img,
 header .h-title span {
   width: 1rem;
   margin: 0.6rem;
+}
+header .h-title img:hover {
+  cursor: pointer;
 }
 header .h-tips-vote {
   display: flex;
@@ -119,6 +123,12 @@ main .player-box img {
   padding: 0.25rem 0;
   border: 2px solid #fff;
   background: #fff;
+}
+main .dead:hover {
+  cursor: not-allowed;
+}
+main .survival:hover {
+  cursor: pointer;
 }
 footer {
   display: flex;

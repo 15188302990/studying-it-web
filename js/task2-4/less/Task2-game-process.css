@@ -24,6 +24,9 @@ header {
 header img {
   height: 1.25rem;
 }
+header img:hover {
+  cursor: pointer;
+}
 header span {
   font-size: 1rem;
   color: #fff;
@@ -46,6 +49,9 @@ main .grid-title {
   justify-content: space-between;
   border-bottom: 1px solid #c9c9c9;
   background-color: #fff;
+}
+main .grid-title:hover {
+  cursor: pointer;
 }
 main .grid-title p {
   width: 2rem;
@@ -92,6 +98,9 @@ main .acting {
   line-height: 2.5rem;
   text-align: center;
   background-color: #24A7C6;
+}
+main .acting:hover {
+  cursor: pointer;
 }
 main .deader-tip {
   width: 100%;

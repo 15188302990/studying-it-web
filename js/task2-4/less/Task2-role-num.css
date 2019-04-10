@@ -34,6 +34,9 @@ header {
 header img {
   height: 1.4rem;
 }
+header img:hover {
+  cursor: pointer;
+}
 header span {
   font-size: 1.0625rem;
   color: #fff;
@@ -182,6 +185,9 @@ main .phrase input {
 .role-num .slider-box button:active {
   color: #fafafa;
 }
+.role-num .slider-box button:hover {
+  cursor: pointer;
+}
 .role-num .slider-box input {
   width: 60%;
 }
@@ -203,6 +209,9 @@ main .phrase input {
   background-color: #fff;
   border-radius: 0.5rem;
 }
+.role-num .slider-box input[type="range"]::-webkit-slider-thumb:hover {
+  cursor: pointer;
+}
 footer {
   padding: 0.5625rem;
   background-color: #f0f0f0;
@@ -219,6 +228,7 @@ footer button {
 footer button:hover {
   color: #ffa500;
   background-color: #fff;
+  cursor: pointer;
 }
 input {
   outline: none;

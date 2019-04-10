@@ -25,13 +25,15 @@
   justify-content: center;
 }
 html {
-  min-height: 100vh;
-  background-color: #29bde0;
+
+  background-color: #fff;
 }
 body{
   min-width: 320px;
   max-width: 440px;
   margin: auto;
+  min-height: 100vh;
+  background-color: #29bde0;
 }
 header {
   .position-top ();
@@ -42,6 +44,9 @@ header {
   img {
     width: 1rem;
     margin: .6rem;
+    &:hover {
+      cursor:pointer;
+    }
   }
 }
 
@@ -58,6 +63,9 @@ main{
     height: 4rem;
     margin: 6%;
     border: 2px solid #fff;
+    &:hover {
+      cursor:pointer;
+    }
     p{
       margin: 0;
       font-size: .8rem;
@@ -87,5 +95,8 @@ footer {
     text-align: center;
     text-decoration: none;
     background-color: #fbb435;
+    &:hover {
+      cursor:pointer;
+    }
   }
 }
