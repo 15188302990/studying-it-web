@@ -72,3 +72,7 @@ for (i=0;i<arr.length;i++) {
         }
     }
 }
+
+function backLink() {
+    window.location.href = "Task2-page.html";
+}

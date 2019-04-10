@@ -51,6 +51,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2.5rem;
+  padding-bottom: 3.4rem;
   background-color: #29bde0;
 }
 main .player-box {

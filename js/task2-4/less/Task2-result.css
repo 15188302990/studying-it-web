@@ -46,6 +46,9 @@ header img {
   /*改写图片大小*/
   height: 1.5rem;
 }
+header img:hover {
+  cursor: pointer;
+}
 main {
   margin-top: 3.125rem;
   background-color: #29bde0;
@@ -71,6 +74,7 @@ main .gameDetails .surplus-player p {
 }
 main .gameProcess {
   background-color: #fff;
+  padding-bottom: 3.4rem;
 }
 main .gameProcess .process {
   padding: 0 1.5rem;
