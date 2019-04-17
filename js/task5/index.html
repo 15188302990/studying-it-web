@@ -12,14 +12,14 @@
         <p class="title-tip">后台登录</p>
         <div class="inputBox">
             <img src="./img/account.png" height="32" width="32"/>
-            <input class="account" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');" maxlength="11" type="text"  placeholder="请输入账号">
+            <input id="account" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');" maxlength="11" type="text"  placeholder="请输入账号">
         </div>
         <div class="inputBox">
             <img src="./img/pwd.png" height="32" width="32"/>
-            <input class="password" type="text" style="-webkit-text-security:disc" maxlength="15"  placeholder= "请输入密码">
+            <input id="password" type="text" style="-webkit-text-security:disc" maxlength="15"  placeholder= "请输入密码">
         </div>
-        <p class="tips"></p>
-        <div id="button">登录</div>
+        <p class="tips" id="tips"></p>
+        <div id="button" type="button" onclick="login()">登录</div>
     </div>
 </body>
 <script src="./jquery/jquery-3.3.1/jquery-3.3.1.min.js"></script>
