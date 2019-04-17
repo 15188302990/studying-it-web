@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content {
+  width: 360px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+body .content .title-tip {
+  color: #1d7ad9;
+  text-align: center;
+}
+body .content .inputBox {
+  display: flex;
+  justify-content: center;
+  margin: 7px 30px;
+  background-color: #fff;
+}
+body .content img {
+  margin: 10px 0;
+  border-right: 1px solid #ccc;
+}
+body .content input {
+  width: 80%;
+  border: none;
+  outline: none;
+}
+body .content #button {
+  margin: 25px 30px 20px 30px;
+  padding: 5px 0 5px 0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #1d7ad9;
+  cursor: pointer;
+}
+body .content .tips {
+  height: 15px;
+  color: #FF0000;
+  text-align: center;
+}
+/*# sourceMappingURL=Task5.css.map */

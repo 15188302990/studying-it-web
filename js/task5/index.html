@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./less/Task5.css">
+</head>
+<body>
+    <div class="content">
+        <p class="title-tip">后台登录</p>
+        <div class="inputBox">
+            <img src="./img/account.png" height="32" width="32"/>
+            <input class="account" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');" maxlength="11" type="text"  placeholder="请输入账号">
+        </div>
+        <div class="inputBox">
+            <img src="./img/pwd.png" height="32" width="32"/>
+            <input class="password" type="text" style="-webkit-text-security:disc" maxlength="15"  placeholder= "请输入密码">
+        </div>
+        <p class="tips"></p>
+        <div id="button">登录</div>
+    </div>
+</body>
+<script src="./jquery/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<script src="./js/Task5.js"></script>
+</html>
