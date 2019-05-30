@@ -135,19 +135,19 @@ function result() {
     switch (true) {
         case livingKillerNum===0 ://若杀手死完则，平民胜利
             alert("平民胜利");
-            location.href = "Task2-result.html";//跳转到游戏结果日志页面。
+            // location.href = "Task2-result.html";//跳转到游戏结果日志页面。
             break;
         case livingKillerNum===1 && livingCivilianNum===1 && playProcess!==0 ://判断与杀手杀人后，如果平民=杀手=1，则为平局
             alert("平局");
-            location.href = "Task2-result.html";//跳转到游戏结果日志页面。
+            // location.href = "Task2-result.html";//跳转到游戏结果日志页面。
             break;
-        // case livingKillerNum>1 && livingCivilianNum===1 ://判断与杀手杀人后，但平民=1，若杀手＞1，则为杀手必胜利
-        //     alert("杀手胜利");
-        //     location.href = "Task2-result.html";//跳转到游戏结果日志页面。
-        //     break;
+        case livingKillerNum>1 && livingCivilianNum===1 ://判断投票后，但平民=1，若杀手＞1，则为杀手必胜利
+            alert("杀手胜利");
+            // location.href = "Task2-result.html";//跳转到游戏结果日志页面。
+            break;
         case livingKillerNum===livingCivilianNum && playProcess===0 ://判断与投票后，若杀手=平民，则杀手赢，为了排除第一个判断的影响，加上livingKillerNum===1。
             alert("杀手胜利");
-            location.href = "Task2-result.html";//跳转到游戏结果日志页面。
+            // location.href = "Task2-result.html";//跳转到游戏结果日志页面。
             break;
         default:
             location.href = "Task2-game-process.html";//跳转到游戏进程控制页面。

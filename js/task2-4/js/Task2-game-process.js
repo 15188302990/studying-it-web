@@ -1,14 +1,3 @@
-let arr  = JSON.parse(sessionStorage.getItem("playerArray"));
-console.log(arr);
-
-//得到天数，进程、时刻数值
-var playDay = JSON.parse(sessionStorage.getItem("playDay"));
-console.log("此时游戏天数为"+playDay);
-var playProcess = JSON.parse(sessionStorage.getItem("playProcess"));
-console.log("此时游戏进程为"+playProcess);
-var playNow = JSON.parse(sessionStorage.getItem("playNow"));
-console.log("此时游戏时刻为"+playNow);
-
 //font-size的控制
 function setRem(){
     var width = document.body.offsetWidth; //获取当前页面的宽度
@@ -21,6 +10,21 @@ function setRem(){
 }
 setRem(); //运行脚本setRem
 window.onresize=setRem;  //监听屏幕变化
+
+
+
+let arr  = JSON.parse(sessionStorage.getItem("playerArray"));
+console.log(arr);
+
+//得到天数，进程、时刻数值
+var playDay = JSON.parse(sessionStorage.getItem("playDay"));
+console.log("此时游戏天数为"+playDay);
+var playProcess = JSON.parse(sessionStorage.getItem("playProcess"));
+console.log("此时游戏进程为"+playProcess);
+var playNow = JSON.parse(sessionStorage.getItem("playNow"));
+console.log("此时游戏时刻为"+playNow);
+
+
 
 function backLink() {
     window.location.href = "Task2-judge-check.html";
@@ -236,7 +240,7 @@ for (i=1;i<playDay;i++) {
 
 
 
+$(".count").find("img").css("height","1rem");
 
 
-
-
+setTimeout(function(){$(".count").find("img").css("height","0.9rem");},100);
