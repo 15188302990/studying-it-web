@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!--<meta name="viewport" content="width=750, initial-scale=0">-->
+    <meta name="viewport" content="width=device-100%, initial-scale=1"/>
+    <meta name="renderer" content="webkit">
+    <title>2019江苏巾帼创业创新大赛_新华网江苏频道</title>
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=1.1">
+    <link rel="stylesheet" href="../css/fish.css?v=1.1">
+</head>
+<body class="new-body">
+<img class="img-title" src="../imgs/jieshao-b.png" alt="">
+<div class="nav">
+    <a class="paopao paopao1 rel" href="preface.html"><img class="" src="../imgs/jieshao-l.png"/></a>
+    <a class="paopao paopao2 rel" href="arrange.html"><img class="" src="../imgs/anpai-l.png"/></a>
+    <a class="paopao paopao3 rel" href="condition.html"><img class="" src="../imgs/tiaojian-l.png"/></a>
+    <a class="paopao paopao4 rel" href="reward.html"><img class="" src="../imgs/jiangli-l.png"/></a>
+    <a class="paopao paopao5 rel" href="../form.docx"><img style="width: 1.4rem;" src="../imgs/baobiao.png"/></a>
+</div>
+<!--内容开始-->
+<!--<div class="swiper-button-next"></div>-->
+<!--<div class="swiper-button-prev"></div>-->
+<div class="text-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img style=" width: 70%; margin-top: 0;" src="../imgs/xuyan.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img style=" width: 44%; margin-top: 5%;" src="../imgs/jiagou.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img style=" width: 57%; margin-top: 5%;" src="../imgs/jiagou2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Add Arrows -->
+</div>
+<a href="../views/add.html"><img class="home" src="../imgs/home.png" alt=""></a>
+<img style="position: fixed;right: 15%;bottom: 22%;width: 5%;" src="../imgs/xiajiantou.png" height="43" width="31"/>
+<img style="width: 54%;margin: 0 23% 2%" src="../imgs/qiehuan.png">
+<!--内容结束-->
+<script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    function setRem() {
+        var width = document.body.offsetWidth; //获取当前页面的宽度
+        if (width > 440) {
+            width = 440;
+        }
+        var nowFont = width / 320 * 16; //设置页面的字体大小
+        var htmlFont = document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
+        htmlFont.style.fontSize = nowFont + "px"; // 给获取到的元素的字体大小赋值
+    }
+
+    setRem(); //运行脚本setRem
+    window.onresize = setRem;  //监听屏幕变化
+</script>
+</body>
+</html>

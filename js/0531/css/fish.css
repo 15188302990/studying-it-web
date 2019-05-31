@@ -1,0 +1,115 @@
+html{
+    font-size: 62.5%;
+}
+.book{
+    width: 100%;
+    position: absolute;
+    display: block;
+    /* bottom:-0.8rem; */
+    margin: 0 auto;
+}
+.toggle{
+    margin-top: 84%;
+    width: 70px;
+    height: 70px;
+    z-index: 111;
+}
+#plus{
+    margin: 10px;
+}
+.menu{
+    margin-top: 82%;
+}
+.menu > span .icon{
+    width: 22px;
+}
+span.icons:nth-child(1){
+    top: 2px;
+    left: 29px;
+}
+
+span.icons:nth-child(2){
+    top: 22px;
+    left: 2px;
+}
+
+span.icons:nth-child(3){
+    top: 22px;
+    left: 56px;
+}
+
+span.icons:nth-child(4){
+    top: 50px;
+    left: 13px;
+}
+
+span.icons:nth-child(5){
+    top: 50px;
+    left: 45px;
+}
+/*魔方*/
+.pagewarp{
+    width: 100%;
+    /* height:12rem; */
+    background:none;
+}
+.item{
+    width: 150px;
+    height: 150px;
+}
+.rel{
+    position: relative;
+}
+.paopao{
+    display: inline-block;
+    width: 2.05rem;
+    height: 2.05rem;
+    text-align: center;
+    /*background: royalblue;*/
+    background-size: 2.05rem 2.05rem;
+}
+.paopao > img{
+    margin-top: .4rem;
+    width: 1.1rem;
+}
+.paopao1{
+    /*top: 1.85rem;*/
+    /*5.31 修改*/
+    top: 1rem;
+    left: 2.5rem;
+    background-image: url("../imgs/paopao1.png");
+}
+.paopao2{
+    /*top: 3.2rem;*/
+    /*5.31 修改*/
+    top: 2.2rem;
+    left: 2.1rem;
+    background-image: url("../imgs/paopao2.png");
+}
+.paopao3{
+    /*top: 3.9rem;*/
+    /*5.31 修改*/
+    top: 2.9rem;
+    left: 2.1rem;
+    background-image: url("../imgs/paopao3.png");
+}
+.paopao4{
+    /*top: 4.3rem;*/
+    /*5.31 修改*/
+    top: 3.3rem;
+    left: 2.1rem;
+    background-image: url("../imgs/paopao4.png");
+}
+.paopao5{
+    /*top: 3.7rem;*/
+    /*5.31 修改*/
+    top: 2.7rem;
+    left: 2.1rem;
+    background-image: url("../imgs/paopao5.png");
+}
+.home{
+    position: fixed;
+    right: 2px;
+    top: 26.5rem;
+    width: 2.3rem;
+}

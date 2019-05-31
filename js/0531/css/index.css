@@ -1,0 +1,574 @@
+@charset "UTF-8";
+/**
+*
+@Author: MiniHui
+@Date: Mon Apr 29 2019 08:24:05 GMT+0800 (CST)
+*
+*/
+html,
+body,
+div,
+p,
+hr,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+tfoot,
+tbody,
+thead,
+form,
+input,
+textarea,
+label,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+.clearfix:after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /*font-family: 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', 'Helvetica', 'Arial', 'Microsoft YaHei', '寰蒋闆呴粦', 'STHeitiSC-Light', 'simsun', '瀹嬩綋', 'WenQuanYi Zen Hei', 'WenQuanYi Micro Hei', 'sans-serif' !important;*/
+    font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "寰蒋闆呴粦", STHeitiSC-Light, simsun, "瀹嬩綋", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3773db;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+iframe,
+img {
+    border: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: 0;
+    outline: 0;
+}
+
+/* 鍥剧墖鍦板潃 */
+/* 棰滆壊 */
+/* 灞忓箷灏哄 */
+html,
+body {
+    position: relative;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix:after {
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    font-size: 0px;
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+@-webkit-keyframes rotateActive {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotateActive {
+    0% {
+        -moz-transform: rotate(0);
+        transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateActive {
+    0% {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);
+        transform: rotate(0);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fyAni {
+    0% {
+        -webkit-transform: translate3d(8px, 5px, 2px);
+        transform: translate3d(8px, 5px, 2px);
+    }
+    100% {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes fyAni {
+    0% {
+        -moz-transform: translate3d(8px, 5px, 2px);
+        transform: translate3d(8px, 5px, 2px);
+    }
+    100% {
+        -moz-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes fyAni {
+    0% {
+        -webkit-transform: translate3d(8px, 5px, 2px);
+        -moz-transform: translate3d(8px, 5px, 2px);
+        transform: translate3d(8px, 5px, 2px);
+    }
+    100% {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -moz-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes scaletip {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        /* opacity: .6; */
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
+
+@-moz-keyframes scaletip {
+    0% {
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        /* opacity: .6; */
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
+
+@keyframes scaletip {
+    0% {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        /* opacity: .6; */
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -moz-transform: rotateX(180deg) rotateY(180deg);
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+        -moz-transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+        -moz-transform: rotateX(180deg) rotateY(180deg);
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg);
+        -moz-transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes rotate2d {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate2d {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2d {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.page-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pagewarp {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #001e52;
+    overflow: hidden;
+}
+
+#box {
+    width: 6rem;
+    height: 6rem;
+    margin: 15.7rem auto 0;
+    position: relative;
+    -webkit-transform: perspective(800px) rotateY(64deg) rotateX(7deg);
+    -moz-transform: perspective(800px) rotateY(64deg) rotateX(7deg);
+    transform: perspective(800px) rotateY(64deg) rotateX(7deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 8;
+}
+
+#box.boxAnim {
+    -webkit-animation: 20s spin linear infinite;
+    -moz-animation: 20s spin linear infinite;
+    animation: 20s spin linear infinite;
+}
+
+#box div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+}
+
+.tit {
+    position: absolute;
+    top: 1.5vh;
+    left: 12%;
+    width: 76%;
+    z-index: 9;
+}
+
+.tit img {
+    width: 100%;
+}
+
+.bgpng {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.bgpng img {
+    width: 100%;
+}
+
+.front {
+    -webkit-transform: translateZ(3rem);
+    -moz-transform: translateZ(3rem);
+    transform: translateZ(3rem);
+    background: url("../imgs/1.png");
+}
+
+.front a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+}
+
+.back {
+    -webkit-transform: translateZ(-3rem);
+    -moz-transform: translateZ(-3rem);
+    transform: translateZ(-3rem);
+    background: url("../imgs/2.png");
+}
+
+.left {
+    -webkit-transform: translateX(-3rem) rotateY(-90deg);
+    -moz-transform: translateX(-3rem) rotateY(-90deg);
+    transform: translateX(-3rem) rotateY(-90deg);
+    background: url("../imgs/3.png");
+}
+
+.right {
+    -webkit-transform: translateX(3rem) rotateY(90deg);
+    -moz-transform: translateX(3rem) rotateY(90deg);
+    transform: translateX(3rem) rotateY(90deg);
+    background: url("../imgs/4.png");
+}
+
+.top {
+    -webkit-transform: translateY(-3rem) rotateX(90deg);
+    -moz-transform: translateY(-3rem) rotateX(90deg);
+    transform: translateY(-3rem) rotateX(90deg);
+    background: url("../imgs/5.png");
+}
+
+.bottom {
+    -webkit-transform: translateY(3rem) rotateX(90deg);
+    -moz-transform: translateY(3rem) rotateX(90deg);
+    transform: translateY(3rem) rotateX(90deg);
+    background: url("../imgs/6.png");
+}
+
+.pagewarp {
+    background: url("http://www.xinhuanet.com/politics/dxszqc/index/mobile/images/bg-cover.png") center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.mask,
+.maskitem {
+    width: 100%;
+    height: 100vh;
+    background: #001e52;
+    overflow: hidden;
+}
+
+.mask {
+    display: none;
+    background: #fff;
+    z-index: 9999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.maskitem {
+    display: none;
+    color: #3e3e3e;
+    background: #fff;
+    width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+}
+
+.tip {
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation: scaletip 3s linear 0s infinite alternate;
+    -moz-animation: scaletip 3s linear 0s infinite alternate;
+    animation: scaletip 3s linear 0s infinite alternate;
+    z-index: 22;
+}
+
+.active {
+    display: block;
+}
+
+.music {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: .5rem;
+    top: .5rem;
+    z-index: 999;
+}
+
+.music .control {
+    width: 2.4rem;
+    height: 2.5rem;
+    background: url("http://www.xinhuanet.com/politics/dxszqc/index/mobile/images/music.gif") center center no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
+
+.music.stopped .control {
+    background: 0 0;
+}
+
+.music .control .control-after {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -.75rem;
+    margin-left: -.75rem;
+    background: url("http://www.xinhuanet.com/politics/dxszqc/index/mobile/images/music_off.png") center center no-repeat;
+    -wehttp://www.xinhuanet.com/politics/dxszqc/index/mobile/images/ckground-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-animation: rotate2d 1.2s linear infinite;
+    -moz-animation: rotate2d 1.2s linear infinite;
+    animation: rotate2d 1.2s linear infinite;
+    z-index: -1;
+}
+
+.music.stopped .control .control-after {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+/*# sourceMappingURL=maps/index.css.map */

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!--<meta name="viewport" content="width=750, initial-scale=0">-->
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <script  src="../js/rem.js"></script>
+    <title>2019江苏巾帼创业创新大赛_新华网江苏频道</title>
+    <!-- <script src="../js/pageCore.js"></script> -->
+    <script src="../js/zepto.min.js"></script>
+    <!--<script src="../js/touch.js"></script>&lt;!&ndash; build:css &ndash;&gt;-->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel='stylesheet' href='../css/font-awesome.min.css'>-->
+    <link rel="stylesheet" href="../css/style.css?v=1.11">
+    <link rel="stylesheet" href="../css/zzsc.css?v=1.11">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/ball.css">
+    <!--魔方-->
+    <link rel="stylesheet" href="../css/index.css?v=1.111"/>
+    <link rel="stylesheet" href="../css/fish.css?v=1.1111">
+    <script  src="../js/index.js"></script>
+    <!--<script src="../js/jweixin-1.3.2.js"></script>-->
+    <!--<script src="../js/wxShare.js"></script>&lt;!&ndash; endbuild &ndash;&gt;-->
+</head>
+<body>
+
+<!-- 内容开始-->
+<div class="pagewarp">
+    <!--<div class="tit"><img src="http://www.xinhuanet.com/politics/dxszqc/index/mobile/images/tit.png" alt=""/></div>-->
+    <!-- <div class="tip"><img src="http://www.xinhuanet.com/politics/dxszqc/index/mobile/images/tip.png" alt=""/></div> -->
+    <!-- <div class="boxAnim" id="box">
+        <div class="front item" data-thisindex="0"></div>
+        <div class="back item" data-thisindex="1"></div>
+        <div class="top item" data-thisindex="2"></div>
+        <div class="bottom item" data-thisindex="3"></div>
+        <div class="left item" data-thisindex="4"></div>
+        <div class="right item" data-thisindex="5"></div>
+    </div> -->
+    <div class="stage">
+      <figure class="ball red" onclick="aaa('../view/arrange.html')"><span class="textcss">赛程<br>安排</span></figure>
+    </div>
+    <div class="stage2">
+      <figure class="ball grey" onclick="aaa('../view/condition.html')"><span class="textcss2">参赛<br>条件</span></figure>
+    </div>
+    <div class="stage3">
+      <figure class="ball pink" onclick="aaa('../view/preface.html')"><span class="textcss3">大赛<br>介绍</span></figure>
+    </div>
+    <div class="stage4">
+      <figure class="ball bubble" onclick="aaa('../view/reward.html')"><span class="textcss4">奖励<br>办法</span></figure>
+    </div>
+    <div class="stage5">
+      <figure class="ball green" onclick="aaa('../form.docx')"><span class="textcss5">下载<br>报名表</span></figure>
+    </div>
+
+    <div class="mask">
+        <ul>
+            <li class="maskitem" data-thisindex="0"></li>
+            <li class="maskitem" data-thisindex="1">../view/preface.html</li>
+            <li class="maskitem" data-thisindex="2">../view/arrange.html</li>
+            <li class="maskitem" data-thisindex="3">../view/condition.html</li>
+            <li class="maskitem" data-thisindex="4">../view/reward.html</li>
+            <li class="maskitem" data-thisindex="5">../form.docx</li>
+        </ul>
+    </div>
+</div>
+<img class="book wow tada" src="../img/book.png" alt="">
+<img class="fire" src="../imgs/fire.png" alt="">
+<!-- <img class="ballball" src="../imgs/111.png" alt=""> -->
+<!--<script  src="../js/zzsc.js"></script>-->
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.js"></script>
+<script type="text/javascript" src="../js/webdig.js?z=1"></script>
+<script>
+    wow = new WOW({
+        animateClass: 'animated',
+    });
+    wow.init();
+
+    function aaa(params){
+      $('.fire').css({'bottom':"20rem"})
+      setTimeout(()=>{
+        window.location.href= params
+      },1500)
+    }
+
+    // console.log(wow);
+    // function setRem(){
+    //     var width = document.body.offsetWidth; //获取当前页面的宽度
+    //     if(width<320){
+    //         width=320;
+    //     }
+    //     var nowFont=width/320*16; //设置页面的字体大小
+    //     var htmlFont=document.getElementsByTagName('html')[0]; //通过标签名称来获取元素
+    //     htmlFont.style.fontSize =nowFont+"px"; // 给获取到的元素的字体大小赋值
+    //     console.log(nowFont,document.body.offsetWidth)
+    // }
+    // setRem(); //运行脚本setRem
+    // window.onresize=setRem;  //监听屏幕变化
+</script>
+</body>
+</html>

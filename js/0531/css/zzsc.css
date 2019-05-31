@@ -1,0 +1,181 @@
+
+.toggle {
+    background-color: #c87f8a;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 100.8% auto auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.fa-plus{
+    font-size: 50px;
+    color: white;
+    display: block;
+    margin-top: 15px;
+    transition: 0.7s;
+}
+
+.menu {
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    transform: scale(0);
+    border-radius: 50%;
+    border-style: double;
+    border-color: #c87f8a;
+    position: absolute;
+    margin: 100% auto auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+}
+
+.icons {
+    display: inline-block;
+    position: absolute;
+    color: #BBBBBB;
+}
+.menu > span .icon {
+    width: 23px;
+}
+
+span.icons:nth-child(1){
+    top: 2px;
+    left: 29px;
+}
+
+span.icons:nth-child(2){
+    top: 23px;
+    left: 3px;
+}
+
+span.icons:nth-child(3){
+    top: 23px;
+    left: 55px;
+}
+
+span.icons:nth-child(4){
+    top: 50px;
+    left: 12px;
+}
+
+span.icons:nth-child(5){
+    top: 50px;
+    left: 44px;
+}
+
+span.icons:nth-child(6){top: 24px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+a:hover {
+    color: #c87f8a;
+}
+
+
+
+
+
+/*5.28、手指动画效果*/
+@-webkit-keyframes scaletip {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        /* opacity: .6; */
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
+
+@-moz-keyframes scaletip {
+    0% {
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        /* opacity: .6; */
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
+
+@keyframes scaletip {
+    0% {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        /* opacity: .6; */
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}
+/*5.28、手指css*/
+#tip {
+    /*两种位置写法，二选一*/
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    /*position: relative;*/
+    /*right: -34px;*/
+    /*top: 34px;*/
+    width: 30px;
+    height: 30px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-animation: scaletip 2s linear 0s infinite alternate;
+    -moz-animation: scaletip 2s linear 0s infinite alternate;
+    animation: scaletip 2s linear 0s infinite alternate;
+    z-index: 22;
+
+}
+
+/*加号css属性*/
+#plus {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    background: url(../img/plus.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*为“加号按钮添加动画效果”*/
+@keyframes roateplus {
+    0% {
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(90deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    75%{
+        transform:rotate(270deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
